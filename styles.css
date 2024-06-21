@@ -818,7 +818,8 @@ textarea {
   position: relative;
   left: 24%;
   margin-top: 70%;
-  border: solid;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
 .three-images-AI img {
