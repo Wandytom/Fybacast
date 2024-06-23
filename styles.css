@@ -247,12 +247,12 @@ nav .help:hover {
   }
   .ITNetworkInfrastructureSecondPix,
   .CloudComputingFourthPix {
-    min-width: 55%;
+    min-width: 50%;
     float: right;
   }
   .img-info-2 {
     padding: 1px;
-    min-width: 43%;
+    min-width: 42%;
     float: left;
   }
   .GraphicDesignThirdPix,
