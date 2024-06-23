@@ -7,9 +7,9 @@ body {
   background-size: cover;
   background-position: center;
   background-color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   color: #ffffff;
   overflow-x: hidden;
+  contain: layout;
 }
 
 nav .top-bar {
@@ -227,75 +227,101 @@ nav .help:hover {
   background-size: cover;
   max-width: 100%;
   min-height: auto;
-  font-size: 10vw;
+  font-size: 6vw;
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1.5rem;
+  padding: 3%;
 }
 
-/* Media query for even bigger screens */
-@media screen and (min-width: 480px) {
-  .txt {
-    font-size: 6vw; /* Adjust font size based on viewport width */
-  }
-  .ITNetworkInfrastructureSecondPix,
-  .CloudComputingFourthPix {
-    width: 50%;
-    float: right;
-    margin-left: 20px;
-  }
-  .GraphicDesignThirdPix,
-  .CyberSecurityFifthPix {
+@media screen and (min-width: 768px) {
+  .two-images-BW-Services {
+    max-width: 40%;
     float: left;
-    width: 50%;
-    margin-right: 20px;
-  }
-  .two-images-our-service {
-    float: left;
-    margin-right: 1rem;
-  }
-  .wrapper2 {
-    margin: 5% 0 1% 0;
-    align-content: center;
-    padding: 2rem 0 2rem 5rem;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
   }
   .img-info-1 {
     clear: right;
+    max-width: 60%;
+    margin: 10px auto;
   }
-  .img-info-4 {
-    clear: right;
+  .ITNetworkInfrastructureSecondPix,
+  .CloudComputingFourthPix {
+    min-width: 55%;
+    float: right;
   }
   .img-info-2 {
-    clear: left;
+    padding: 1px;
+    min-width: 43%;
+    float: left;
+  }
+  .GraphicDesignThirdPix,
+  .CyberSecurityFifthPix {
+    min-width: 50%;
+    float: left;
   }
   .img-info-3 {
     clear: left;
-    padding-top: 8%;
+    max-width: 50%;
+  }
+  .img-info-4 {
+    float: right;
+    min-width: 45%;
+    padding: 4px;
+  }
+  .wrapper3 {
+    display: flex;
+  }
+  .subHeading {
+    line-height: 2rem;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  }
+  .wrapper2 {
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  .dots {
+    margin-top: 2rem;
+  }
+  .ML {
+    min-width: 30%;
+  }
+  .deepLearning {
+    min-width: 20%;
+  }
+  .rotating-string,
+  .bg-wheel-three-images,
+  .AI {
+    min-width: 40%;
+  }
+  .three-images-AI {
+    top: 10%;
   }
   .AI-ML-DL-images {
     float: right;
-    width: auto;
-    height: auto;
+    left: 25%;
+    max-width: 70%;
   }
 }
 
 .GraphicDesignThirdPix,
 .CyberSecurityFifthPix {
   width: 40rem;
-  margin-top: 2%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  border: solid;
+  padding: 1px;
 }
 
 .ITNetworkInfrastructureSecondPix,
 .CloudComputingFourthPix {
-  width: 40rem;
-  margin-top: 2%;
+  width: 380px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: solid;
+  padding: 1px;
 }
 
 /* First rectangle container */
@@ -346,38 +372,40 @@ nav .help:hover {
 }
 
 .wrapper2 {
-  display: block;
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-items: center;
-  margin-bottom: 7px;
-  padding: 1rem;
   text-align: center;
+  width: 100%;
+  padding: 1%;
+  display: block;
+}
+
+.wrapper3 {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 1%;
 }
 
 /* Text container */
-.img-info-2,
+.img-info-2 {
+  width: 270px;
+  color: white;
+
+  padding: 2px;
+  margin: auto;
+}
+
 .img-info-4 {
-  padding-top: 9%;
-  font-size: 28px;
+  width: 100%;
   color: white;
   margin: 0.5rem;
-  min-width: 350px;
-}
-
-.img-info-1 {
-  padding-top: 2%;
-  font-size: 28px;
-  color: white;
-}
-
-.img-info-3 {
-  max-width: 100%;
-  text-align: center;
-  font-size: 28px;
-  color: white;
-  margin-top: 25rem;
+  padding: 2px;
 }
 
 /* Image styles */
@@ -440,10 +468,11 @@ nav .help:hover {
 }
 
 h4 {
-  font-size: 42px;
+  font-size: 6vw;
   color: #020727;
-  padding-top: 2%;
-  margin: 0.5rem;
+  padding-top: 1%;
+  line-height: 90%;
+  text-align: center;
 }
 
 .btn {
@@ -454,13 +483,13 @@ h4 {
   );
   color: white;
   border: none;
-  padding: 1rem 3rem;
+  padding: 3% 9%;
   border-radius: 5rem;
   cursor: pointer;
   font-weight: lighter;
-  font-size: 2rem;
+  font-size: 24px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
+  transform 0.3s ease-in-out;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   margin: 3% auto;
 }
@@ -491,11 +520,11 @@ h4 {
     rgba(142, 186, 10, 0.149),
     #00b55c
   );
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 20px;
   margin-bottom: 1.5rem;
   text-align: center;
   backdrop-filter: blur(20px);
-  position: relative;
+  position: sticky;
   width: 100%;
 }
 
@@ -516,7 +545,7 @@ h4 {
 .gallery {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
 }
 
@@ -624,7 +653,7 @@ h4 {
 }
 
 .txt2 {
-  font-size: 1.7rem;
+  font-size: 24px;
   color: white;
   padding: 0.4rem 0;
   margin: 0 auto;
@@ -657,7 +686,7 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-  width: calc(100% - 1rem);
+  width: calc(100% - 5rem);
   height: 2rem;
   padding: 0.4rem;
   margin-bottom: 0.5rem;
@@ -666,7 +695,7 @@ textarea {
   background-color: #0207279f;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   color: #fff;
-  max-width: 50rem;
+  max-width: 100%;
 }
 
 textarea {
@@ -682,6 +711,7 @@ textarea {
   background-color: #0207279f;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   color: #ffffff;
+  max-width: 100%;
 }
 
 .top-layer-overlay-contact {
@@ -693,12 +723,13 @@ textarea {
     rgba(142, 186, 10, 0.149),
     #00b55c
   );
-  padding: 1.5rem;
+  padding: 20px;
   text-align: center;
   align-items: center;
   backdrop-filter: blur(20px);
   height: auto;
   margin: 0 1rem 0 1rem;
+  position: sticky;
 }
 
 .contactInfo {
@@ -712,6 +743,8 @@ textarea {
 
 .contact-form {
   display: inline-block;
+  align-content: center;
+  width: 100%;
 }
 
 .paragraph {
@@ -754,7 +787,7 @@ textarea {
 .dots {
   display: flex;
   justify-content: center;
-  margin-top: 26rem;
+  margin-top: 4px;
 }
 
 .dot {
@@ -797,75 +830,77 @@ textarea {
 /*For three/two concentric images*/
 .AI-ML-DL-images {
   position: relative;
+  padding: 2px;
   width: 500px;
-  margin-bottom: 8.5rem;
-  margin-top: 4rem;
-}
-
-.two-images-our-service {
-  position: relative;
-  width: 400px;
-  height: 400px;
+  margin: 0 auto;
 }
 
 .two-images-BW-Services {
+  max-width: 100%;
+  width: 274px;
+  height: 274px;
+  align-content: center;
+  margin: 13px auto;
+  padding: 2px;
   position: relative;
-  width: 100%;
-  height: 100%;
+  border: solid rgb(255, 255, 255);
+  border-radius: 50%;
 }
 
 .three-images-AI {
   position: relative;
-  left: 24%;
-  margin-top: 70%;
+  border: solid;
+  margin-top: 33%;
+  left: 17%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding-top: 19.7%;
 }
 
 .three-images-AI img {
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+
 }
 
 .two-images-BW-Services img {
   position: absolute;
   top: 50%;
-  left: 53.5%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
 
 .rotating-string {
-  width: 210px;
-  height: 210px;
+  width: 130px;
+  height: 130px;
   animation: rotateAntiClockwise 0.7s linear infinite;
 }
 
 .AI {
-  width: calc(210px + 3rem);
-  height: calc(210px + 3rem);
+  width: calc(130px + 3rem);
+  height: calc(130px + 3rem);
 }
 
 .bg-wheel-three-images {
-  width: calc(210px + 4rem);
-  height: calc(210px + 4rem);
+  width: calc(130px + 4rem);
+  height: calc(130px + 4rem);
   animation: rotateClockwise 5s linear infinite;
 }
 
 .our-services-first-pix {
-  width: 370px;
-  height: 370px;
+  width: 250px;
+  height: auto;
+  max-width: 100%;
 }
 
 .bg-wheel-two-images {
-  width: calc(370px + 1rem);
-  height: calc(370px + 1rem);
+  width: calc(250px + 1rem);
+  height: calc(250px + 1rem);
   animation: rotateClockwise 5s linear infinite;
-}
-
-.AI-ML-DL-content {
-  display: block;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
 
 .wrapper6-section,
@@ -879,24 +914,37 @@ textarea {
   margin-bottom: 3rem;
 }
 
-.img-info-3,
+.img-info-3 {
+  width: 100%;
+}
+
 .img-info-1 {
-  margin: 0.5rem;
-  min-width: 400px;
+  width: 100%;
+  padding: 0 4px;
+  align-content: center;
+  line-height: 28px;
+  align-items: center;
 }
 
 .ML {
   position: absolute;
   animation: bounce 5s infinite;
-  width: 200px;
-  min-width: 40%;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  border: solid;
+  border-radius: 50%;
+  left: 25%;
 }
 
 .deepLearning {
   position: absolute;
   animation: slideInleftDL 5s ease-in-out 0.5s infinite;
-  width: 150px;
+  width: 100px;
   top: 35%;
+  border: solid;
+  border-radius: 50%;
+  max-width: 100%;
 }
 
 @keyframes slideInleftDL {
@@ -904,7 +952,7 @@ textarea {
     transform: translateX(-900%);
   }
   to {
-    transform: translateX(-105%);
+    transform: translateX(-250%);
   }
 }
 
@@ -912,11 +960,11 @@ textarea {
   0%,
   100%,
   30%{
-    transform: translateX(15%);
+    transform: translateX(-10%);
   }
 
   30% {
-    transform: translateX(-23%);
+    transform: translateX(-70%);
   }
 
   70% {
