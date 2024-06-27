@@ -236,6 +236,13 @@ nav .help:hover {
   padding: 3%;
 }
 
+.world-image .column-dots {
+  height: 50px;
+  width: 50px;
+  float: right;
+  margin-top: -50px;
+}
+
 @media screen and (min-width: 1000px) {
   .two-images-BW-Services {
     left: 5%;
@@ -271,6 +278,7 @@ nav .help:hover {
   .img-info-3 {
     clear: left;
     max-width: 48%;
+    margin-top: 0px;
   }
   .img-info-4 {
     float: right;
@@ -820,9 +828,10 @@ textarea {
 
 /*For three/two concentric images*/
 .AI-ML-DL-images {
-  width: 100%;
+  width: 300px;
   height: 360px;
   position: relative;
+  margin: 0 auto;
 }
 
 .two-images-BW-Services {
@@ -913,6 +922,7 @@ textarea {
 
 .img-info-3 {
   width: 100%;
+  margin-top: -40px;
 }
 
 .img-info-1 {
