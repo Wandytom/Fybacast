@@ -44,6 +44,7 @@ nav a .logo {
   height: 150%;
   margin: 20% 0 0 0%;
   animation: rotateLogo 4s ease-in-out alternate-reverse infinite;
+  border-radius: 50%;
 }
 
 nav li {
@@ -234,14 +235,15 @@ nav .help:hover {
   align-items: center;
   text-align: center;
   padding: 3%;
+  position: relative;
 }
-
+/*
 .world-image .column-dots {
-  height: 50px;
-  width: 50px;
-  float: right;
-  margin-top: -50px;
-}
+  width: 40px;
+  height: auto;
+  transform: translate(360%, -100%);
+  position: absolute;
+}*/
 
 @media screen and (min-width: 1000px) {
   .two-images-BW-Services {
@@ -278,7 +280,6 @@ nav .help:hover {
   .img-info-3 {
     clear: left;
     max-width: 48%;
-    margin-top: 0px;
   }
   .img-info-4 {
     float: right;
@@ -677,7 +678,6 @@ h4 {
   font-size: 1rem;
   margin: 0 auto;
   color: #56585e;
-  box-shadow: none;
 }
 
 input[type="text"],
@@ -694,7 +694,7 @@ textarea {
   background-color: #0207279f;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   color: #fff;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 textarea {
@@ -710,7 +710,7 @@ textarea {
   background-color: #0207279f;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   color: #ffffff;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 .top-layer-overlay-contact {
@@ -922,7 +922,6 @@ textarea {
 
 .img-info-3 {
   width: 100%;
-  margin-top: -40px;
 }
 
 .img-info-1 {
