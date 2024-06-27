@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const elements = document.querySelectorAll('.txt, .contact-info, .txt2, .testimony, .testimony-position, .two-images-our-service, .ITNetworkInfrastructureSecondPix, .GraphicDesignThirdPix, .CloudComputingFourthPix, .CyberSecurityFifthPix, .AI-ML-DL-images, .subHeading, .contactInfo');
+    const elements = document.querySelectorAll('.txt, .contact-info, .txt2, .testimony, .testimony-position, .two-images-BW-Services, .ITNetworkInfrastructureSecondPix, .GraphicDesignThirdPix, .CloudComputingFourthPix, .CyberSecurityFifthPix, .AI-ML-DL-images, .subHeading, .contactInfo');
     elements.forEach(element => {
         observer.observe(element);
     });
