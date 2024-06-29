@@ -2,7 +2,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: serif;;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,9 +96,10 @@ ul .help:active {
 }
 
 .animated-text {
-  color: white;
+  color: #e4c844ff;
   transform: translateY(auto 0);
   font-size: 2rem;
+  text-shadow: 3px 3px 5px rgb(2, 7, 39);
 }
 
 .menuicon {
@@ -230,20 +231,19 @@ nav .help:hover {
   max-width: 100%;
   min-height: auto;
   font-size: 6vw;
-  display: block;
+  display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 3%;
-  position: relative;
 }
-/*
+
 .world-image .column-dots {
-  width: 40px;
-  height: auto;
-  transform: translate(360%, -100%);
-  position: absolute;
-}*/
+  background-image: url(images/columnDots.png);
+  width: 59px;
+  height: 55px;
+  margin-left: auto;
+}
 
 @media screen and (min-width: 1000px) {
   .two-images-BW-Services {
@@ -258,9 +258,9 @@ nav .help:hover {
   }
   .img-info-1 {
     clear: right;
-    max-width: 60%;
+    max-width: 50%;
     margin: 10px auto;
-    margin-top: 3%;
+    margin-top: 1%;
   }
   .ITNetworkInfrastructureSecondPix,
   .CloudComputingFourthPix {
@@ -270,7 +270,7 @@ nav .help:hover {
   .img-info-2 {
     max-width: 46%;
     float: left;
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .GraphicDesignThirdPix,
   .CyberSecurityFifthPix {
@@ -289,13 +289,8 @@ nav .help:hover {
   .wrapper3 {
     display: flex;
   }
-  .subHeading {
-    line-height: 2rem;
-    font-size: 2.2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  }
   .dots {
-    margin-top: 2rem;
+    margin-top: 15px;
   }
   .ML {
     min-width: 30%;
@@ -470,10 +465,11 @@ nav .help:hover {
 
 h4 {
   font-size: 6vw;
-  color: #020727;
+  color: #e4c844ff;
   padding-top: 1%;
   line-height: 90%;
   text-align: center;
+  text-shadow: 3px 3px 5px rgb(2, 7, 39);
 }
 
 .btn {
@@ -509,7 +505,8 @@ h4 {
 }
 
 .top-layer-overlay {
-  background-image: linear-gradient(
+  background-color: #2d3544ff;
+  /*background-image: linear-gradient(
     1355deg,
     #00b55c,
     rgba(142, 186, 10, 0.149),
@@ -520,7 +517,7 @@ h4 {
     #00b55c,
     rgba(142, 186, 10, 0.149),
     #00b55c
-  );
+  );*/
   padding: 20px;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -574,7 +571,7 @@ h4 {
   transform: translateY(100%) scale(0.96);
   transition: transform 0.5s ease;
   align-content: center;
-  line-height: 2rem;
+  line-height: 25px;
   border: 4px solid #00b55c;
 }
 
@@ -645,20 +642,11 @@ h4 {
 }
 
 /*Contact form*/
-
-.ContactUsContainer {
-  max-width: 20rem;
-  margin: 1rem auto;
-  padding: 1rem;
-  text-align: center;
-}
-
 .txt2 {
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   padding: 0.4rem 0;
   margin: 0 auto;
-  box-shadow: none;
 }
 
 .contact-info {
@@ -677,7 +665,7 @@ h4 {
 .testimony-position {
   font-size: 1rem;
   margin: 0 auto;
-  color: #56585e;
+  color: #71747e;
 }
 
 input[type="text"],
@@ -714,14 +702,15 @@ textarea {
 }
 
 .top-layer-overlay-contact {
-  background-image: linear-gradient(
+  background-color: #2d3544ff;
+  /*background-image: linear-gradient(
     1355deg,
     #00b55c,
     rgba(142, 186, 10, 0.149),
     #00b55c,
     rgba(142, 186, 10, 0.149),
     #00b55c
-  );
+  );*/
   padding: 5%;
   text-align: center;
   align-items: center;
@@ -729,10 +718,20 @@ textarea {
   height: auto;
   margin: 0 1rem 0 1rem;
   position: sticky;
+  border-radius: 2px;
+}
+
+.top-layer-overlay-copyright {
+  background-color: rgb(149, 49, 82);
+  margin: 15px 15px 0px 15px;
+  padding: 10px;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .contactInfo {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .paragraphs {
@@ -844,6 +843,7 @@ textarea {
   position: relative;
   border: solid rgb(255, 255, 255);
   border-radius: 50%;
+  box-shadow: 3px 3px 5px rgb(2, 7, 39);
 }
 
 .three-images-AI {
@@ -885,6 +885,7 @@ textarea {
   height: calc(130px + 4rem);
   animation: rotateClockwise 5s linear infinite;
   border: solid;
+  box-shadow: 3px 3px 5px rgb(2, 7, 39);
 }
 
 .our-services-first-pix {
@@ -907,7 +908,7 @@ textarea {
   justify-content: center;
   justify-items: center;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 20px;
 }
 
 .wrapper1-section {
@@ -941,6 +942,7 @@ textarea {
   border: solid;
   border-radius: 50%;
   left: 47%;
+  box-shadow: 3px 3px 5px rgb(2, 7, 39);
 }
 
 .deepLearning {
@@ -951,6 +953,7 @@ textarea {
   border: solid 1.5px;
   border-radius: 50%;
   max-width: 100%;
+  box-shadow: 3px 3px 5px rgb(2, 7, 39);
 }
 
 @keyframes slideInleftDL {
