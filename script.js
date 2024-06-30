@@ -55,3 +55,36 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+
+//To interchange backgroundColor with background-image: linear-gradient
+document.addEventListener("DOMContentLoaded", () => {
+  const topLayerOverlay = document.querySelector(".top-layer-overlay");
+  const topLayerOverlayContact = document.querySelector(".top-layer-overlay-contact");
+  const topLayerOverlay1 = document.querySelector(".top-layer-overlay1");
+  const topLayerOverlay2 = document.querySelector(".top-layer-overlay2");
+
+  let isColor = true;
+
+  setInterval(() => {
+    if (isColor) {
+      topLayerOverlay.classList.add("background-gradient-1");
+      topLayerOverlay.classList.remove("background-gradient-2");
+      topLayerOverlayContact.classList.add("background-gradient-1");
+      topLayerOverlayContact.classList.remove("background-gradient-2");
+      topLayerOverlay1.classList.add("background-gradient-1");
+      topLayerOverlay1.classList.remove("background-gradient-2");
+      topLayerOverlay2.classList.add("background-gradient-1");
+      topLayerOverlay2.classList.remove("background-gradient-2");
+    } else {
+      topLayerOverlay.classList.add("background-gradient-2");
+      topLayerOverlay.classList.remove("background-gradient-1");
+      topLayerOverlayContact.classList.add("background-gradient-2");
+      topLayerOverlayContact.classList.remove("background-gradient-1");
+      topLayerOverlay1.classList.add("background-gradient-2");
+      topLayerOverlay1.classList.remove("background-gradient-1");
+      topLayerOverlay2.classList.add("background-gradient-2");
+      topLayerOverlay2.classList.remove("background-gradient-1");
+    }
+    isColor = !isColor;
+  }, 10000);
+});
