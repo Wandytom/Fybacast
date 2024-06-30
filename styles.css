@@ -98,8 +98,9 @@ ul .help:active {
 .animated-text {
   color: #e4c844ff;
   transform: translateY(auto 0);
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-shadow: 3px 3px 5px rgb(2, 7, 39);
+  line-height: normal;
 }
 
 .menuicon {
@@ -235,7 +236,7 @@ nav .help:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3%;
+  padding: 3.5%;
 }
 
 .world-image .column-dots {
@@ -327,48 +328,49 @@ nav .help:hover {
 /* First rectangle container */
 .first-rect-container {
   background-image: linear-gradient(
-    45deg,
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgba(123, 156, 188, 1),
-    rgb(150, 149, 149),
-    #00b55c,
-    rgba(123, 156, 188, 1),
-    rgba(123, 156, 188, 1),
-    rgb(150, 149, 149),
-    #00b55c,
-    rgba(123, 156, 188, 1),
-    rgba(123, 156, 188, 1),
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1)
+  45deg,
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgba(123, 156, 188, 1),
+  rgb(150, 149, 149),
+  #00b55c,
+  rgba(123, 156, 188, 1),
+  rgba(123, 156, 188, 1),
+  rgb(150, 149, 149),
+  #00b55c,
+  rgba(123, 156, 188, 1),
+  rgba(123, 156, 188, 1),
+  rgb(150, 149, 149),
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgb(150, 149, 149),
+  #00b55c,
+  rgb(150, 149, 149),
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgb(150, 149, 149),
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgb(150, 149, 149),
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgb(150, 149, 149),
+  rgba(123, 156, 188, 1),
+  #00b55c,
+  rgb(150, 149, 149),
+  rgba(123, 156, 188, 1)
   );
   backdrop-filter: blur(30px);
   padding: 0px 0px 1px 0px;
   width: 100%;
   position: relative;
+  justify-content: space-around;
 }
 
 .wrapper2 {
@@ -504,26 +506,24 @@ h4 {
   letter-spacing: 0.1rem;
 }
 
-.top-layer-overlay {
-  background-color: #2d3544ff;
-  /*background-image: linear-gradient(
-    1355deg,
-    #00b55c,
-    rgba(142, 186, 10, 0.149),
-    #00b55c,
-    rgba(142, 186, 10, 0.149),
-    #00b55c,
-    rgba(142, 186, 10, 0.149),
-    #00b55c,
-    rgba(142, 186, 10, 0.149),
-    #00b55c
-  );*/
+.top-layer-overlay,
+.top-layer-overlay1,
+.top-layer-overlay2 {
+  background-color:#2d3544ff;
   padding: 20px;
-  margin-bottom: 1.5rem;
   text-align: center;
   backdrop-filter: blur(20px);
-  position: sticky;
   width: 100%;
+  transition: background 2s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.background-gradient-1 {
+  background-color: #49484a;
+}
+
+.background-gradient-2 {
+  background-color:#2d3544ff;
 }
 
 .laptop .laptop-img {
@@ -544,7 +544,7 @@ h4 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 .image-container {
@@ -702,27 +702,18 @@ textarea {
 }
 
 .top-layer-overlay-contact {
-  background-color: #2d3544ff;
-  /*background-image: linear-gradient(
-    1355deg,
-    #00b55c,
-    rgba(142, 186, 10, 0.149),
-    #00b55c,
-    rgba(142, 186, 10, 0.149),
-    #00b55c
-  );*/
+  background-color:#2d3544ff;
   padding: 5%;
   text-align: center;
   align-items: center;
   backdrop-filter: blur(20px);
   height: auto;
-  margin: 0 1rem 0 1rem;
-  position: sticky;
+  margin: 1rem 1rem 0 1rem;
   border-radius: 2px;
 }
 
 .top-layer-overlay-copyright {
-  background-color: rgb(149, 49, 82);
+  background-color: #2d3544ff;
   margin: 15px 15px 0px 15px;
   padding: 10px;
   border-radius: 2px;
@@ -801,7 +792,7 @@ textarea {
 @keyframes rotateDots {
   0%,
   20% {
-    background-color: #333;
+    background-color: rgb(2, 7, 39, 0.7);
   }
   25%,
   100% {
