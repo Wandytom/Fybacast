@@ -223,7 +223,7 @@ nav .help:hover {
 
 .txt {
   color: #fff;
-  text-shadow: 2px 2px 5px rgba(2, 7, 39, 1);
+  text-shadow: 2px 2px 3px rgba(2, 7, 39, 1);
 }
 
 .world-image {
@@ -471,7 +471,7 @@ h4 {
   padding-top: 1%;
   line-height: 90%;
   text-align: center;
-  text-shadow: 3px 3px 5px rgb(2, 7, 39);
+  text-shadow: 2px 2px 3px rgb(2, 7, 39);
 }
 
 .btn {
@@ -514,16 +514,18 @@ h4 {
   text-align: center;
   backdrop-filter: blur(20px);
   width: 100%;
-  transition: background 2s ease-in-out;
+  transition: background 0.2s ease-in-out;
   margin-bottom: 15px;
 }
 
 .background-gradient-1 {
-  background-color: #49484a;
+  background-color: #2d3544ff;
+  backdrop-filter: blur(20px);
 }
 
 .background-gradient-2 {
-  background-color:#2d3544ff;
+  background-color:rgba(100, 84, 67, 0.542);
+  backdrop-filter: blur(20px);
 }
 
 .laptop .laptop-img {
@@ -572,7 +574,7 @@ h4 {
   transition: transform 0.5s ease;
   align-content: center;
   line-height: 25px;
-  border: 4px solid #00b55c;
+  border: 4px solid #e9bc6bff;
 }
 
 .image-container:hover img {
@@ -719,6 +721,7 @@ textarea {
   border-radius: 2px;
   text-align: center;
   font-size: 12px;
+  backdrop-filter: blur(20px);
 }
 
 .contactInfo {
