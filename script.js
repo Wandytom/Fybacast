@@ -88,3 +88,4 @@ document.addEventListener("DOMContentLoaded", () => {
     isColor = !isColor;
   }, 10000);
 });
+
