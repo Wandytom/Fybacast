@@ -509,7 +509,6 @@ h4 {
 .top-layer-overlay,
 .top-layer-overlay1,
 .top-layer-overlay2 {
-  background-color:#2d3544ff;
   padding: 20px;
   text-align: center;
   backdrop-filter: blur(20px);
