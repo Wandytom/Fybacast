@@ -510,9 +510,8 @@ h4 {
     transform 0.3s ease-in-out;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   margin: 0% auto 10%;
+  top: 40px;
   display: flex;
-  top: 25px;
-  text-decoration: none;
 }
 
 .top-layer-overlay,
@@ -523,6 +522,7 @@ h4 {
   backdrop-filter: blur(30px);
   transition: background 0.2s ease-in-out;
   margin: 12px;
+  position: static;
 }
 
 .background-gradient-1 {
@@ -543,6 +543,10 @@ h4 {
 .laptop .laptop-img {
   width: 100%;
   position: absolute;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
 
 @keyframes slideInRight {
@@ -683,7 +687,7 @@ h4 {
 .testimony-position {
   font-size: 1rem;
   margin: 0 auto;
-  color: #b1b4be;
+  color: #555861;
 }
 
 input[type="text"],
@@ -728,6 +732,7 @@ textarea {
   height: auto;
   margin: 1rem 1.5rem 0 1.5rem;
   border-radius: 4px;
+  position: static;
 }
 
 .top-layer-overlay-copyright {
@@ -738,6 +743,7 @@ textarea {
   text-align: center;
   font-size: 12px;
   backdrop-filter: blur(20px);
+  position: static;
 }
 
 .contactInfo {
@@ -845,8 +851,8 @@ textarea {
 
 .two-images-BW-Services {
   max-width: 100%;
-  width: 274px;
-  height: 274px;
+  width: 262px;
+  height: 262px;
   align-content: center;
   margin: 13px auto;
   padding: 2px;
@@ -899,14 +905,14 @@ textarea {
 }
 
 .our-services-first-pix {
-  width: 250px;
+  width: 240px;
   height: auto;
   max-width: 100%;
 }
 
 .bg-wheel-two-images {
-  width: calc(250px + 1rem);
-  height: calc(250px + 1rem);
+  width: calc(240px + 1rem);
+  height: calc(240px + 1rem);
   animation: rotateClockwise 5s linear infinite;
   max-width: 100%;
 }
