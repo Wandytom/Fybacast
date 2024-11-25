@@ -1,14 +1,35 @@
 body {
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
+  background-size: cover;
+  width: 100%;
   font-family: serif;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(
+    45deg,
+    rgb(150, 149, 149),
+    rgba(123, 156, 188, 1),
+    #00b55c,
+    rgb(150, 149, 149),
+    #00b55c,
+    rgb(150, 149, 149),
+    rgba(123, 156, 188, 1),
+    #00b55c,
+    rgb(150, 149, 149),
+    rgba(123, 156, 188, 1),
+    #00b55c,
+    rgb(150, 149, 149),
+    rgba(123, 156, 188, 1),
+    #00b55c,
+    rgb(150, 149, 149),
+    rgba(123, 156, 188, 1),
+    #00b55c);
   background-position: center;
   color: #ffffff;
   overflow-x: hidden;
   contain: layout;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .blinkBlackBackgroung {
@@ -335,51 +356,6 @@ navpsach.help:hover {
 }
 
 /* First rectangle container */
-.first-rect-container {
-  background-image: linear-gradient(
-    45deg,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c
-  );
-  backdrop-filter: blur(30px);
-  padding: 0px 0px 1px 0px;
-  width: 100%;
-  position: relative;
-  justify-content: space-around;
-  padding: 12px 12px 0 12px;
-}
 
 .wrapper2 {
   align-items: center;
@@ -523,7 +499,7 @@ h4 {
     #020727 90%
   );
   position: relative;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 3% 7%;
   border-radius: 5rem;
@@ -535,7 +511,8 @@ h4 {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   margin: 0% auto 10%;
   display: flex;
-  top: 3cqb;
+  top: 25px;
+  text-decoration: none;
 }
 
 .top-layer-overlay,
@@ -543,10 +520,9 @@ h4 {
 .top-layer-overlay2 {
   padding: 20px;
   text-align: center;
-  backdrop-filter: blur(20px);
-  width: 100%;
+  backdrop-filter: blur(30px);
   transition: background 0.2s ease-in-out;
-  margin-bottom: 15px;
+  margin: 12px;
 }
 
 .background-gradient-1 {
@@ -707,7 +683,7 @@ h4 {
 .testimony-position {
   font-size: 1rem;
   margin: 0 auto;
-  color: #71747e;
+  color: #b1b4be;
 }
 
 input[type="text"],
@@ -750,15 +726,15 @@ textarea {
   align-items: center;
   backdrop-filter: blur(20px);
   height: auto;
-  margin: 1rem 1rem 0 1rem;
-  border-radius: 2px;
+  margin: 1rem 1.5rem 0 1.5rem;
+  border-radius: 4px;
 }
 
 .top-layer-overlay-copyright {
   background-color: rgb(83, 96, 122);
-  margin: 15px 15px 0px 15px;
+  margin: 15px 23px 0px 23px;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 4px 4px 0 0;
   text-align: center;
   font-size: 12px;
   backdrop-filter: blur(20px);
