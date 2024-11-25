@@ -522,7 +522,7 @@ h4 {
   backdrop-filter: blur(30px);
   transition: background 0.2s ease-in-out;
   margin: 12px;
-  position: static;
+  background-position: center;
 }
 
 .background-gradient-1 {
