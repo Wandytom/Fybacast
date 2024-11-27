@@ -2,10 +2,10 @@ body {
   min-height: 100vh;
   background-size: cover;
   width: 100%;
-  color: #ffffff;
   font-family: serif;
   background-repeat: no-repeat;
   background-position: center;
+  color: #ffffff;
   overflow-x: hidden;
   contain: layout;
   justify-items: center;
@@ -490,60 +490,22 @@ h4 {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     transform 0.3s ease-in-out;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 0% auto 10%;
+  margin: 0% auto 5%;
   top: 40px;
   display: flex;
 }
 
+.rectBG {
+  background: url(images/rectBG.png);
+}
+
 .first-rect-container {
   padding: 12px 12px 0px 12px;
-  background-image: linear-gradient(
-    45deg,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c);
 }
 
-.first-rect-container1 {
-  padding: 12px 24px 0px 24px;
-  background-image: linear-gradient(
-    45deg,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c);
-}
-
+.first-rect-container1,
 .first-rect-container2 {
   padding: 12px 24px 0px 24px;
-  background-image: linear-gradient(
-    45deg,
-    rgb(150, 149, 149),
-    rgba(123, 156, 188, 1),
-    #00b55c,
-    rgb(150, 149, 149),
-    #00b55c);
 }
 
 .top-layer-overlay,
@@ -762,7 +724,6 @@ textarea {
   backdrop-filter: blur(20px);
   height: auto;
   border-radius: 4px;
-  position: static;
 }
 
 .top-layer-overlay-copyright {
@@ -772,7 +733,6 @@ textarea {
   text-align: center;
   font-size: 12px;
   backdrop-filter: blur(20px);
-  position: static;
 }
 
 .contactInfo {
@@ -781,7 +741,7 @@ textarea {
 
 .paragraphs {
   position: relative;
-  height: 70vh;
+  height: 50vh;
 }
 
 .contact-form {
