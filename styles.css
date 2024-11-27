@@ -495,6 +495,10 @@ h4 {
   display: flex;
 }
 
+h2 {
+  text-decoration: none;
+}
+
 .rectBG {
   background: url(images/rectBG.png);
 }
@@ -506,6 +510,11 @@ h4 {
 .first-rect-container1,
 .first-rect-container2 {
   padding: 12px 24px 0px 24px;
+}
+
+.top-layer-overlay2 {
+  background-color: rgb(83, 96, 122);
+  border-radius: 12px;
 }
 
 .top-layer-overlay,
