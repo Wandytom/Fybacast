@@ -530,7 +530,7 @@ h2 {
 .top-layer-overlay-copyright {
   background-color: rgb(83, 96, 122);
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
   text-align: center;
   font-size: 12px;
   backdrop-filter: blur(20px);
