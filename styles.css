@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
+  background-color: #000000;
   overflow-x: hidden;
   contain: layout;
   justify-items: center;
@@ -325,7 +326,8 @@ navpsach.help:hover {
   .contactUsContainer {
     padding: 60px;
   }
-  .contact-form {
+  .contact-form,
+  .formContainer {
     padding: 98px;
   }
 }
@@ -1100,18 +1102,9 @@ textarea {
   padding: 12px;
 }
 
-.triangle {
-  width: 18rem;
-  height: 18rem;
-  background-color: #fff;
-  margin: 0 auto;
-  rotate: 70deg;
-  border-radius: 15rem 0 0 0;
-  filter: blur(55px);
-  opacity: 0.3;
-  animation: rotateClockwise 3s infinite;
-  animation-direction: normal;
-  animation-range: 15deg;
+.formContainer {
+  background-color: rgb(83, 96, 122);
+  padding: 12px;
 }
 
 .subPage {
