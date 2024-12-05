@@ -510,16 +510,10 @@ h2 {
   background: url(images/rectBG.png);
 }
 
-.first-rect-container {
-  padding: 6px 6px 0px 6px;
-}
-
-.first-rect-container1 {
-  padding: 6px 12px 0px 12px;
-}
-
+.first-rect-container,
+.first-rect-container1,
 .first-rect-container2 {
-  padding: 6px 0px 0px 0px;
+  padding: 6px 0 0 0;
 }
 
 .top-layer-overlay,
@@ -536,7 +530,7 @@ h2 {
 .top-layer-overlay-copyright {
   background-color: rgb(83, 96, 122);
   padding: 10px;
-  border-radius: 4px 4px 0 0;
+  border-radius: 12px;
   text-align: center;
   font-size: 12px;
   backdrop-filter: blur(20px);
@@ -801,7 +795,7 @@ textarea {
   align-items: center;
   backdrop-filter: blur(20px);
   height: auto;
-  border-radius: 4px;
+  border-radius: 12px;
   background-color: rgb(83, 96, 122);
 }
 
