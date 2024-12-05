@@ -325,6 +325,9 @@ navpsach.help:hover {
   .contactUsContainer {
     padding: 60px;
   }
+  .contact-form {
+    padding: 98px;
+  }
 }
 
 .GraphicDesignThirdPix,
@@ -508,15 +511,15 @@ h2 {
 }
 
 .first-rect-container {
-  padding: 12px 12px 0px 12px;
+  padding: 6px 6px 0px 6px;
 }
 
 .first-rect-container1 {
-  padding: 12px 24px 0px 24px;
+  padding: 6px 12px 0px 12px;
 }
 
 .first-rect-container2 {
-  padding: 12px 0px 0px 0px;
+  padding: 6px 0px 0px 0px;
 }
 
 .top-layer-overlay,
@@ -1100,6 +1103,7 @@ textarea {
   align-items: center;
   text-align: center;
   text-justify: auto;
+  padding: 12px;
 }
 
 .triangle {
