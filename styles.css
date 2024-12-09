@@ -14,10 +14,6 @@ body {
   align-items: center;
 }
 
-.blinkBlackBackgroung {
-  background-color: #000000;
-}
-
 nav .top-bar {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -46,8 +42,8 @@ nav {
 }
 
 nav a .logo {
-  width: 130%;
-  height: 100%;
+  width: 40px;
+  height: 30px;
   margin: 20% 0 0 0%;
   animation: rotateLogo 4s ease-in-out alternate-reverse infinite;
 }
@@ -606,7 +602,7 @@ h2 {
 
 .gallery img,
 .galleryA img {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
   
@@ -1067,7 +1063,7 @@ textarea {
 .navpsach {
   background-image: linear-gradient(
     90deg,
-    #08148cff,
+    rgba(83, 96, 122, 0.846),
     #ecab5cff
   );
   display: flex;
@@ -1076,22 +1072,13 @@ textarea {
   height: 100px;
   box-shadow: rgba(228, 201, 68, 0.4);
 }
-
-.psachBody {
-  background: url(images/g34023others.png) ;
-  background-size: cover;
-  width: 100%;
-  font-size: 8cqmin;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  text-justify: auto;
-  padding: 12px;
-}
-
+  
 .formContainer {
   background-color: rgb(83, 96, 122);
-  padding: 12px;
+  padding: 12px 48px 12px 48px;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
 }
 
 .subPage {
