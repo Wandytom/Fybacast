@@ -326,9 +326,6 @@ navpsach.help:hover {
   .formContainer {
     padding: 98px;
   }
-  .designFormContainer {
-    padding: 250px;
-  }
 }
 
 .GraphicDesignThirdPix,
@@ -403,7 +400,7 @@ navpsach.help:hover {
 .contactInfo {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s, transform 2s;
+  transition: opacity 1s, transform 1s;
 }
 
 .txt.visible,
@@ -1082,6 +1079,7 @@ textarea {
   align-items: center;
   text-align: center;
   height: 100vh;
+  width: 100%;
 }
 
 .designFormContainer {
@@ -1089,6 +1087,7 @@ textarea {
   padding: 12px 48px 12px 48px;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 .subPage {
