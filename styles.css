@@ -797,7 +797,7 @@ textarea {
   display: inline-block;
   align-content: center;
   width: 100%;
-  padding: 10%;
+  padding: 10% 2%;
   background-color: rgb(179, 190, 212);
   border-radius: 12px;
 }
