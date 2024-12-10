@@ -326,6 +326,9 @@ navpsach.help:hover {
   .formContainer {
     padding: 98px;
   }
+  .designFormContainer {
+    padding: 250px;
+  }
 }
 
 .GraphicDesignThirdPix,
@@ -1079,6 +1082,13 @@ textarea {
   align-items: center;
   text-align: center;
   height: 100vh;
+}
+
+.designFormContainer {
+  background-color: rgb(83, 96, 122);
+  padding: 12px 48px 12px 48px;
+  align-items: center;
+  text-align: center;
 }
 
 .subPage {
