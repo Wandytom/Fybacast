@@ -797,8 +797,8 @@ textarea {
   display: inline-block;
   align-content: center;
   width: 100%;
-  padding: 10% 2%;
-  background-color: rgb(179, 190, 212);
+  padding: 5%;
+  background-color: rgb(94, 108, 136);
   border-radius: 12px;
 }
 
@@ -1077,7 +1077,7 @@ textarea {
 }
   
 .formContainer {
-  background-color: rgb(179, 190, 212);
+  background-color: rgb(94, 108, 136);
   padding: 12px 48px 12px 48px;
   align-items: center;
   text-align: center;
