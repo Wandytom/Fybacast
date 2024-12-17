@@ -232,6 +232,7 @@ navpsach.help:hover {
 .txt {
   color: #fff;
   text-shadow: 2px 2px 3px rgba(2, 7, 39, 1);
+  margin-top: -2em;
 }
 
 .world-image {
@@ -464,13 +465,13 @@ h4 {
 }
 
 .btn:hover,
-.ctn:hover {
+.laptop a:hover {
   transform: translateY(-10px);
   background-color: black;
 }
 
 .btn:active,
-.ctn:active {
+.laptop a:active {
   opacity: 0.5;
   color: gold;
   transition-duration: 2s;
@@ -478,26 +479,29 @@ h4 {
   letter-spacing: 0.1rem;
 }
 
-.ctn {
+.laptop a {
+  position: relative;
+  width: 12rem;
   background-image: linear-gradient(
     45deg,
     rgba(123, 156, 188, 1) 5%,
     #020727 90%
   );
-  position: relative;
   color: rgb(255, 255, 255);
   border: none;
-  padding: 3% 7%;
+  padding: 1rem .1rem;
   border-radius: 5rem;
   cursor: pointer;
   font-weight: lighter;
   font-size: 24px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
     transform 0.3s ease-in-out;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 0% auto 5%;
-  top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2% auto;
+  top: -35px;
   display: flex;
+  text-decoration: none;
+  justify-content: center;
 }
 
 h2 {
@@ -523,23 +527,19 @@ h2 {
 }
 
 /*.background-gradient-1 {
-  background-color: #53607a;
+  background-color: rgb(83, 96, 122);
   backdrop-filter: blur(20px);
   opacity: 1;
-  border-radius: 12px;
-
 }
 
 .background-gradient-2 {
   background-color: #965959;
   backdrop-filter: blur(20px);
   opacity: 1;
-  border-radius: 12px;
 }*/
 
 .laptop .laptop-img {
   width: 100%;
-  position: absolute;
   justify-content: center;
   justify-items: center;
   align-items: center;
