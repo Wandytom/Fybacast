@@ -445,8 +445,7 @@ h4 {
   text-shadow: 2px 2px 3px rgb(2, 7, 39);
 }
 
-.btn,
-#submit-button {
+.btn {
   background-image: linear-gradient(
     45deg,
     rgba(123, 156, 188, 1) 5%,
@@ -527,6 +526,19 @@ h4 {
   display: flex;
   text-decoration: none;
   justify-content: center;
+}
+
+#contactForm a:hover {
+  transform: translateY(-10px);
+  background-color: black;
+}
+
+#contactForm a:active {
+  opacity: 0.5;
+  color: gold;
+  transition-duration: 2s;
+  box-shadow: none;
+  letter-spacing: 0.1rem;
 }
 
 h2 {
@@ -1090,6 +1102,7 @@ textarea {
 .psachBody {
   background-color: rgb(83, 96, 122);
   width: 100%;
+  min-height: 100vh;
   color: #020727;
   justify-content: center;
   display: flex;
