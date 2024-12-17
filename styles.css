@@ -827,6 +827,7 @@ textarea {
   display: inline-block;
   align-content: center;
   width: 100%;
+  max-width: 500px;
   padding: 5%;
   background-color: rgb(94, 108, 136);
   border-radius: 12px;
@@ -1090,7 +1091,9 @@ textarea {
   background-color: rgb(83, 96, 122);
   width: 100%;
   color: #020727;
-  padding: 10%;
+  justify-content: center;
+  display: flex;
+  padding: 24px;
 }
 
 .navpsach {
@@ -1112,6 +1115,7 @@ textarea {
   align-items: center;
   text-align: center;
   width: 100%;
+  max-width: 500px;
   border-radius: 12px;
 }
 
