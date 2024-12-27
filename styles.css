@@ -331,6 +331,9 @@ navpsach.help:hover {
   .formContainer {
     padding: 98px;
   }
+  .txt {
+  margin-top: -2em;
+  }
 }
 
 .GraphicDesignThirdPix,
