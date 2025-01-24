@@ -338,6 +338,12 @@ navpsach.help:hover {
   .txt {
   margin-top: -1.8em;
   }
+  .gallery {
+    animation: slideInRightGalleryImages 15s linear infinite;
+  }
+  .galleryA {
+    animation: slideInRightGalleryImages 15s linear infinite;
+  }
 }
 
 .GraphicDesignThirdPix,
@@ -615,7 +621,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1rem;
   width: max-content;
-  animation: slideInRightGalleryImages 10s linear infinite;
+  animation: slideInRightGalleryImages 30s linear infinite;
   position: relative;
 }
 
@@ -624,7 +630,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1rem;
   width: max-content;
-  animation: slideInLeftGalleryImages 10s linear infinite;
+  animation: slideInLeftGalleryImages 30s linear infinite;
   position: relative;
 }
 
