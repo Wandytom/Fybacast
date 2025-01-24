@@ -672,7 +672,7 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   transform: translateY(100%) scale(0.96);
   transition: transform 0.5s ease;
@@ -699,7 +699,7 @@ h2 {
 .product-container:hover,
 .product-container2:hover {
   .animated-text {
-    animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
   }
 
   .country-animated-slide {
@@ -707,13 +707,13 @@ h2 {
   }
 
   .order-button-animated-slide {
-    animation: slideInBottom 2.5s ease 0.1s;
+    animation: slideInBottom 2s ease 0.1s;
     font-family: Arial, Helvetica, sans-serif;
   }
 
   .price-animated-slide {
     animation: rotatePrice 1.5s ease 0.5s forwards;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
   }
 }
 
