@@ -377,6 +377,10 @@ navpsach.help:hover {
   width: 100%;
 }
 
+.img-info-2 .btn {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .img-info-4 {
   width: 100%;
   color: white;
@@ -770,7 +774,7 @@ h2 {
   font-size: 18px;
   color: white;
   padding: 0.4rem 0;
-  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .contact-info {
