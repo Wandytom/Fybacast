@@ -259,6 +259,10 @@ navpsach.help:hover {
   margin-left: auto;
 }
 
+.world-image .btn {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @media screen and (min-width: 1000px) {
   .two-images-BW-Services {
     left: 5%;
