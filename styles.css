@@ -453,9 +453,9 @@ navpsach.help:hover {
   --primaryColor: rgb(83, 96, 122);
   --secondaryColor: #e4c844ff;
   --tetiaryColor: rgb(94, 108, 136);
-  --tetiary2Color: #020727;
+  --tetiary2Color: rgb(160, 179, 212);
   --tetiary3Color: #0207279f;
-  --buttonColor: rgb(160, 179, 212);
+  --buttonColor: #020727;
   --textColor: #fff;
 }
 
@@ -477,7 +477,7 @@ h4 {
   cursor: pointer;
   font-weight: lighter;
   font-size: 24px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   margin: 3% auto;
   text-decoration: none;
@@ -489,16 +489,17 @@ h4 {
 .img-info-1 a:hover {
   transform: translateY(-10px);
   background-color: var(--tetiary2Color);
+  color: var(--buttonColor);
 }
 
 .btn:active,
 .laptop a:active {
   opacity: 0.5;
-  color: var(--tetiary2Color);
+  color: var(--textColor);
   transition-duration: 0.1ms;
   box-shadow: none;
   letter-spacing: 0.1rem;
-  background-color: var(--textColor);
+  background-color: var(--buttonColor);
 }
 
 .laptop a {
