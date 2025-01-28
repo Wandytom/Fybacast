@@ -340,6 +340,12 @@ navpsach.help:hover {
   .galleryA {
     animation: slideInRightGalleryImages 15s linear infinite;
   }
+  #linkBtn,
+  .btn {
+    background-image: linear-gradient(160deg,
+    var(--buttonColor) 15%,
+    var(--secondaryColor));
+  }
 }
 
 .GraphicDesignThirdPix,
@@ -381,6 +387,7 @@ navpsach.help:hover {
 /* Text container */
 .img-info-2 {
   width: 100%;
+  
 }
 
 .img-info-4 {
@@ -468,7 +475,8 @@ h4 {
   text-shadow: 2px 2px 3px rgb(2, 7, 39);
 }
 
-.btn {
+.btn,
+#linkBtn {
   background-color: var(--buttonColor);
   color: var(--textColor);
   border: none;
@@ -484,9 +492,7 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn:hover,
-.laptop a:hover,
-.img-info-1 a:hover {
+.btn:hover {
   transform: translateY(-10px);
   background-color: var(--tetiary2Color);
   color: var(--buttonColor);
@@ -496,10 +502,25 @@ h4 {
 .laptop a:active {
   opacity: 0.5;
   color: var(--textColor);
+  background-color: var(--buttonColor);
   transition-duration: 0.1ms;
   box-shadow: none;
   letter-spacing: 0.1rem;
+}
+
+#linkBtn:hover {
+  transform: translateY(-10px);
+  background-color: var(--tetiary2Color);
+  color: var(--buttonColor);
+}
+
+#linkBtn:active {
+  opacity: 0.5;
+  color: var(--textColor);
   background-color: var(--buttonColor);
+  transition-duration: 0.1ms;
+  box-shadow: none;
+  letter-spacing: 0.1rem;
 }
 
 .laptop a {
@@ -650,7 +671,7 @@ h2 {
   height: auto;
   transform: scale(0.96);
   transition: transform 1s ease-in-out;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.7);
 }
   
 .gallery-outer-container1,
