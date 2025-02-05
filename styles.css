@@ -1000,7 +1000,7 @@ textarea {
   justify-items: center;
   width: 100%;
   max-width: 500px;
-  padding: 32px;
+  padding: 32px 24px;
   background-color: var(--tetiaryColor);
   border-radius: 12px;
 }
