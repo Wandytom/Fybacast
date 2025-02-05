@@ -1,1444 +1,331 @@
-body {
-  min-height: 100vh;
-  background-size: cover;
-  width: 100%;
-  background: var(--primaryColor);
-  font-family: roboto, sans-serif;
-  font-weight: 100;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: var(--textColor);
-  overflow-x: hidden;
-  contain: layout;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-}
-
-nav .top-bar {
-  font-family: roboto, sans-serif;
-  font-weight: 200;
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-nav a {
-  height: 100%;
-  padding: 20px 30px;
-  display: flex;
-  align-items: center;
-  color: var(--textColor);
-  text-decoration: none;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  background-color: #000000;
-  box-shadow: rgba(228, 201, 68, 0.4);
-}
-
-nav a .logo {
-  width: 40px;
-  height: 30px;
-  margin: 20% 0 0 0%;
-  animation: rotateLogo 4s ease-in-out alternate-reverse infinite;
-}
-
-nav li,
-navpsach li {
-  height: 50px;
-}
-
-ul .home:hover,
-ul .product:hover,
-ul .service:hover,
-ul .about:hover,
-ul .contact:hover,
-ul .help:hover {
-  opacity: 0.8;
-}
-
-ul .home:active,
-ul .product:active,
-ul .service:active,
-ul .about:active,
-ul .contact:active,
-ul .help:active {
-  opacity: 1;
-  font-style: italic;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 220px;
-  z-index: 999;
-  background-color: rgba(228, 201, 68, 0.4);
-  backdrop-filter: blur(20px);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  transition: transform 5s ease-in-out;
-}
-
-.sidebar li {
-  width: 100%;
-  list-style-type: none;
-}
-
-.sidebar a {
-  width: 35%;
-}
-
-.sidebarOthers {
-  opacity: 0;
-}
-
-.animated-text {
-  color: var(--secondaryColor);
-  transform: translateY(auto 0);
-  font-size: 1.8rem;
-  text-shadow: 3px 3px 5px rgb(2, 7, 39);
-  line-height: normal;
-}
-
-.menuicon {
-  filter: brightness(0) invert(1);
-  display: none;
-}
-
-.closeicon {
-  filter: brightness(0) invert(1);
-}
-
-nav .home:hover,
-nav .product:hover,
-nav .service:hover,
-nav .about:hover,
-nav .contact:hover,
-nav .help:hover,
-navpsach.home:hover,
-navpsach.product:hover,
-navpsach.service:hover,
-navpsach.about:hover,
-navpsach.contact:hover,
-navpsach.help:hover {
-  background-color: rgba(228, 201, 68, 0.4);
-  backdrop-filter: blur(20px);
-  border-radius: 0.5rem;
-}
-
-.blinkBlackBackgroung {
-  background: #000000;
-}
-
-@media (max-width: 330px) {
-  nav .top-bar {
-    display: none;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
-}
-
-/*Utility classes
-.animate {
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
-
-.animate--infinite {
-  animation-iteration-count: infinite;
-}
-
-.animate--delay {
-  animation-delay: 1s;
-}
-
-.animate--fast {
-  animation-duration: 0.6s;
-}
-
-.animate--slow {
-  animation-duration: 3s;
-}*/
-
-/*Animations*/
-
-.it-easier {
-  margin: 0 auto;
-  width: 75%;
-  animation: slideInRight 2s 0.5s ease both;
-  display: block;
-}
-
-.make-it-easier {
-  animation: fadeInMakeIt 2s ease infinite;
-}
-
-@keyframes fadeInMakeIt {
-
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
-}
-
-@keyframes rotateLogo {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.fybacast-img {
-  animation: fadeInFybacast 2s ease infinite;
-  width: 75%;
-  margin: 0 auto;
-  display: block;
-}
-
-@keyframes fadeInFybacast {
-
-  0%,
-  50%,
-  100% {
-    opacity: 0;
-  }
-
-  25%,
-  75% {
-    opacity: 1;
-  }
-}
-
-.fybacast {
-  animation: fadeIn 10s ease-in-out;
-}
-
-.fybacast .fybacast-img:hover {
-  opacity: 0.8;
-}
-
-* {
-  padding: 0px;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.txt {
-  color: var(--textColor);
-  text-shadow: 2px 2px 3px rgba(2, 7, 39, 1);
-  margin-top: -3em;
-}
-
-.world-image {
-  background: url(images/world.png);
-  background-size: cover;
-  max-width: 100%;
-  min-height: auto;
-  font-size: 6vw;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 6%;
-  margin-top: -24px;
-}
-
-.world-image .column-dots {
-  background-image: url(images/columnDots.png);
-  width: 59px;
-  height: 55px;
-  margin-left: auto;
-}
-
-@media screen and (min-width: 1000px) {
-  .two-images-BW-Services {
-    left: 5%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .two-images-BW-Services {
-    max-width: 40%;
-    float: left;
-  }
-
-  .world-image {
-    font-family: roboto, sans-serif;
-    font-weight: 200;
-  }
-
-  .img-info-1 {
-    clear: right;
-    max-width: 50%;
-    margin: 10px auto;
-    margin-top: 1%;
-  }
-
-  .ITNetworkInfrastructureSecondPix,
-  .CloudComputingFourthPix {
-    min-width: 50%;
-    clear: right;
-  }
-
-  .img-info-2 {
-    max-width: 44%;
-    float: left;
-    margin-top: 5%;
-  }
-
-  .GraphicDesignThirdPix,
-  .CyberSecurityFifthPix {
-    min-width: 50%;
-    float: left;
-  }
-
-  .img-info-3 {
-    clear: left;
-    max-width: 48%;
-  }
-
-  .img-info-4 {
-    float: right;
-    min-width: 45%;
-    padding: 4px;
-  }
-
-  .wrapper3 {
-    display: flex;
-  }
-
-  .dots {
-    margin-top: 15px;
-  }
-
-  .ML {
-    min-width: 30%;
-  }
-
-  .deepLearning {
-    min-width: 20%;
-  }
-
-  .rotating-string,
-  .bg-wheel-three-images,
-  .AI {
-    min-width: 40%;
-  }
-
-  .AI-ML-DL-images {
-    float: right;
-    margin-left: 3px;
-    max-width: 48%;
-    padding: 2px;
-  }
-
-  .top-layer-overlay-contact,
-  .contactUsContainer {
-    padding: 60px;
-  }
-
-  /* .contact-form,
-  .formContainer {
-    padding: 98px;
-  } */
-
-  .txt {
-    margin-top: -1.8em;
-  }
-
-  .gallery {
-    animation: slideInRightGalleryImages 15s linear infinite;
-  }
-
-  .galleryA {
-    animation: slideInRightGalleryImages 15s linear infinite;
-  }
-
-  .whatWeDo {
-    max-width: 768px;
-    z-index: 2;
-    margin-right: 32px;
-  }
-
-  .serviceSideBar {
-    width: calc(100% - 768px);
-    height: 100%;
-    background: var(--tetiaryColor);
-    border-radius: 12px;
-    padding: 12px;
-    text-align: left;
-    color: var(--textColor);
-    line-height: 28px;
-    z-index: 1;
-    float: left;
-    letter-spacing: 1px;
-  }
-
-  .moreDesign {
-    width: 100%;
-  }
-
-  .formContainer {
-    display: flex;
-  }
-}
-
-.GraphicDesignThirdPix,
-.CyberSecurityFifthPix {
-  width: 380px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
-}
-
-.ITNetworkInfrastructureSecondPix,
-.CloudComputingFourthPix {
-  width: 380px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* First rectangle container */
-
-.wrapper2 {
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  width: 100%;
-  display: block;
-
-}
-
-.wrapper3 {
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  width: 100%;
-  padding: 1%;
-}
-
-/* Text container */
-.img-info-2 {
-  width: 100%;
-
-}
-
-.img-info-4 {
-  width: 100%;
-  color: var(--textColor);
-  margin: 0.5rem;
-  padding: 2px;
-}
-
-/* Image styles */
-.ITNetworkInfrastructureSecondPix,
-.GraphicDesignThirdPix,
-.CloudComputingFourthPix,
-.CyberSecurityFifthPix {
-  max-width: 100%;
-  height: auto;
-}
-
-.txt,
-.contact-info,
-.txt2,
-.testimony,
-.testimony-position,
-.two-images-BW-Services,
-.ITNetworkInfrastructureSecondPix,
-.GraphicDesignThirdPix,
-.CloudComputingFourthPix,
-.CyberSecurityFifthPix,
-.AI-ML-DL-images,
-.subHeading,
-.contactInfo {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 1.5s;
-}
-
-.txt.visible,
-.contact-info.visible,
-.txt2.visible,
-.testimony.visible,
-.testimony-position.visible,
-.two-images-BW-Services.visible,
-.ITNetworkInfrastructureSecondPix.visible,
-.GraphicDesignThirdPix.visible,
-.CloudComputingFourthPix.visible,
-.CyberSecurityFifthPix.visible,
-.AI-ML-DL-images.visible,
-.subHeading.visible,
-.contactInfo.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-
-  .top-bar .home,
-  .top-bar .product,
-  .top-bar .service,
-  .top-bar .about,
-  .top-bar .contact,
-  .top-bar .help {
-    display: none;
-  }
-
-  .menuicon {
-    display: block;
-  }
-}
-
-:root {
-  --primaryColor: rgb(83, 96, 122);
-  --secondaryColor: #e4c844ff;
-  --tetiaryColor: rgb(94, 108, 136);
-  --tetiary2Color: rgb(160, 179, 212);
-  --tetiary3Color: #0207279f;
-  --buttonColor: #020727;
-  --textColor: #fff;
-}
-
-h4 {
-  font-size: 7vw;
-  color: var(--secondaryColor);
-  padding-top: 1%;
-  line-height: 90%;
-  font-weight: 200;
-  text-align: center;
-  text-shadow: 0 2px 3px rgb(2, 7, 39);
-}
-
-/* .btn {
-  background-color: var(--buttonColor);
-  color: var(--textColor);
-  border: none;
-  padding: 3% 9%;
-  border-radius: 5rem;
-  cursor: pointer;
-  font-weight: 200;
-  font-size: 24px;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 3% auto;
-  text-decoration: none;
-  font-family: roboto, sans-serif;
-} */
-
-#linkBtn {
-  position: relative;
-  text-decoration: none;
-  background: var(--textColor);
-  color: var(--textColor);
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  font-weight: 200;
-  padding: 10px 20px;
-  transition: 0.5s;
-  margin-top: 30px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* .btn:hover {
-  transform: translateY(-10px);
-  background-color: var(--tetiary2Color);
-  color: var(--buttonColor);
-} */
-
-/* .btn:active,
-.laptop a:active {
-  opacity: 0.5;
-  color: var(--textColor);
-  background-color: var(--buttonColor);
-  transition-duration: 0.1ms;
-  box-shadow: none;
-  letter-spacing: 0.1rem;
-} */
-
-#linkBtn:before {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  background: #020727;
-}
-
-#linkBtn span {
-  position: relative;
-  z-index: 1;
-}
-
-#linkBtn i {
-  position: absolute;
-  inset: 0;
-  display: block;
-}
-
-#linkBtn i::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 80%;
-  width: 15px;
-  height: 4px;
-  background: var(--buttonColor);
-  transform: translateX(-50%) skewX(325deg);
-  transition: 0.5s;
-}
-
-#linkBtn i::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 70%;
-  width: 15px;
-  height: 4px;
-  background: var(--buttonColor);
-  transform: translateX(-50%) skewX(325deg);
-  transition: 0.5s;
-}
-
-#linkBtn:hover i::before {
-  width: 20px;
-  left: 20%;
-}
-
-#linkBtn:hover i::after {
-  width: 20px;
-  right: 10%;
-}
-
-#linkBtn:hover {
-  letter-spacing: 0.15rem;
-  background-color: var(--secondaryColor);
-  color: var(--secondaryColor);
-  box-shadow: 0 0 30px var(--secondaryColor);
-  cursor: pointer;
-}
-
-#linkBtn:active {
-  opacity: 0.5;
-  color: var(--tetiary2Color);
-  background-color: var(--tetiary2Color);
-  transition-duration: 0.1ms;
-  box-shadow: none;
-  letter-spacing: 0.1rem;
-  box-shadow: 0 0 30px var(--tetiary2Color);
-}
-
-.laptop a {
-  position: relative;
-  max-width: 14rem;
-  padding: 1rem .1rem;
-  font-family: roboto, sans-serif;
-  margin: 0 auto;
-  top: -3.5em;
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-}
-
-.radioPaymentMethod {
-  width: 100%;
-  height: auto;
-  background: rgba(83, 96, 122, 0.512);
-  text-align: left;
-  color: var(--textColor);
-  border-radius: 6px;
-  line-height: 2.8em;
-  padding: 12px 24px;
-}
-
-
-#contactForm a:hover {
-  transform: translateY(-10px);
-  background-color: black;
-}
-
-#contactForm a:active {
-  opacity: 0.5;
-  color: var(--secondaryColor);
-  transition-duration: 2s;
-  box-shadow: none;
-  letter-spacing: 0.1rem;
-}
-
-h2 {
-  text-decoration: none;
-}
-
-.top-layer-overlay,
-.top-layer-overlay2 {
-  padding: 20px;
-  text-align: center;
-  backdrop-filter: blur(50px);
-  transition: background 0.2s ease-in-out;
-  background-position: center;
-  background-color: var(--primaryColor);
-}
-
-.top-layer-overlay-copyright {
-  background-color: var(--primaryColor);
-  padding: 10px;
-  text-align: center;
-  font-size: 12px;
-  backdrop-filter: blur(50px);
-}
-
-/*.background-gradient-1 {
-  background-color: var(--primaryColor);
-  backdrop-filter: blur(20px);
-  opacity: 1;
-}
-
-.background-gradient-2 {
-  background-color: #965959;
-  backdrop-filter: blur(20px);
-  opacity: 1;
-}*/
-
-.laptop .laptop-img {
-  width: 100%;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-
-/*Gallery*/
-
-@keyframes slideInLeftGalleryImages {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(25%);
-  }
-
-  5% {
-    transform: translate(5%);
-  }
-}
-
-.gallery {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  width: max-content;
-  animation: slideInRightGalleryImages 30s linear infinite;
-  position: relative;
-}
-
-.galleryA {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  width: max-content;
-  animation: slideInLeftGalleryImages 30s linear infinite;
-  position: relative;
-}
-
-@keyframes slideInRightGalleryImages {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-25%);
-  }
-
-  5% {
-    transform: translate(-5%);
-  }
-}
-
-.gallery img,
-.galleryA img {
-  display: block;
-  width: 250px;
-  height: auto;
-  transform: scale(0.96);
-  transition: transform 1s ease-in-out;
-  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.7);
-}
-
-.gallery-outer-container1,
-.gallery-outer-container2 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.product-container,
-.product-container2 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  margin: 0 auto;
-}
-
-.product-container .overlay,
-.product-container2 .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: var(--textColor);
-  transform: translateY(100%) scale(0.96);
-  transition: transform 0.5s ease;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  line-height: 25px;
-  border: 4px solid #e9bc6bff;
-}
-
-.product-container:hover img,
-.product-container2:hover img {
-  transform: scale(1);
-}
-
-.product-container:hover .overlay,
-.product-container2:hover .overlay {
-  transform: translateY(0);
-  height: 100%;
-}
-
-.product-container:hover,
-.product-container2:hover {
-  .animated-text {
-    animation: fadeIn 2s ease-in-out;
-  }
-
-  .country-animated-slide {
-    animation: slideInRightCountry 1s ease 0.1s;
-  }
-
-  .order-button-animated-slide {
-    animation: slideInBottom 2s ease 0.1s;
-    font-family: roboto, sans-serif;
-  }
-
-  .price-animated-slide {
-    animation: rotatePrice 1.5s ease 0.5s forwards;
-    margin-bottom: 5%;
-  }
-}
-
-@keyframes slideInRightCountry {
-  from {
-    transform: translateX(50%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes rotatePrice {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes slideInBottom {
-  from {
-    transform: translateY(-300%);
-  }
-
-  to {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0.4;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInMakeIt {
-
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
-}
-
-/*Contact form*/
-.txt2 {
-  font-size: 18px;
-  color: var(--textColor);
-  padding: 0.4rem 0;
-  margin-bottom: 1rem;
-}
-
-.contact-info {
-  color: var(--textColor);
-  font-size: 1rem;
-  max-width: 50rem;
-  margin: 1rem auto;
-}
-
-.testimony {
-  font-size: 1.5rem;
-  margin: 0 auto;
-  color: var(--tetiary2Color);
-}
-
-.testimony-position {
-  font-size: 1rem;
-  margin: 0 auto;
-  color: #bbb;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-select,
-textarea {
-  /*width: calc(100% - 5rem);*/
-  height: 2rem;
-  padding: 0.4rem;
-  margin-bottom: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--tetiary3Color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  color: var(--textColor);
-  /*min-width: 100%;*/
-  width: 100%;
-  max-width: 400px;
-}
-
-textarea {
-  height: 8rem;
-}
-
-.select-wrapper select {
-  height: 2rem;
-  padding: 0.4rem;
-  margin-bottom: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--tetiary3Color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  color: var(--textColor);
-  /*min-width: 100%;*/
-  width: 100%;
-  max-width: 400px;
-}
-
-.top-layer-overlay-contact,
-.contactUsContainer {
-  padding: 20px;
-  text-align: center;
-  align-items: center;
-  backdrop-filter: blur(20px);
-  height: auto;
-  background-color: var(--primaryColor);
-}
-
-.contactInfo {
-  font-size: 12px;
-}
-
-.paragraphs {
-  position: relative;
-  height: 50vh;
-}
-
-.contact-form {
-  display: inline-block;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-  max-width: 500px;
-  padding: 32px 24px;
-  background-color: var(--tetiaryColor);
-  border-radius: 12px;
-}
-
-.contact-formPayment {
-  display: inline-block;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-  max-width: 600px;
-  padding: 32px;
-  background-color: var(--tetiaryColor);
-  border-radius: 12px;
-}
-
-.paragraph {
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-  transition: opacity 1s ease-in-out;
-}
-
-@keyframes rotateParagraphs {
-
-  0%,
-  15% {
-    opacity: 1;
-  }
-
-  25%,
-  100% {
-    opacity: 0;
-  }
-}
-
-.paragraph:nth-child(1) {
-  animation: rotateParagraphs 75s infinite;
-}
-
-.paragraph:nth-child(2) {
-  animation: rotateParagraphs 75s infinite 15s;
-}
-
-.paragraph:nth-child(3) {
-  animation: rotateParagraphs 75s infinite 30s;
-}
-
-.paragraph:nth-child(4) {
-  animation: rotateParagraphs 75s infinite 45s;
-}
-
-.paragraph:nth-child(5) {
-  animation: rotateParagraphs 75s infinite 60s;
-}
-
-.paragraph:nth-child(6) {
-  animation: rotateParagraphs 75s infinite 75s;
-}
-
-.dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 4px;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-}
-
-@keyframes rotateDots {
-
-  0%,
-  20% {
-    background-color: rgb(2, 7, 39, 0.7);
-  }
-
-  25%,
-  100% {
-    background-color: #bbb;
-  }
-}
-
-.dot:nth-child(1) {
-  animation: rotateDots 75s infinite;
-}
-
-.dot:nth-child(2) {
-  animation: rotateDots 75s infinite 15s;
-}
-
-.dot:nth-child(3) {
-  animation: rotateDots 75s infinite 30s;
-}
-
-.dot:nth-child(4) {
-  animation: rotateDots 75s infinite 45s;
-}
-
-.dot:nth-child(5) {
-  animation: rotateDots 75s infinite 60s;
-}
-
-/*For three/two concentric images*/
-.AI-ML-DL-images {
-  width: 300px;
-  height: 360px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.two-images-BW-Services {
-  max-width: 100%;
-  width: 262px;
-  height: 262px;
-  align-content: center;
-  margin: 13px auto;
-  padding: 2px;
-  position: relative;
-  border: solid rgb(255, 255, 255);
-  border-radius: 50%;
-  box-shadow: 3px 3px 5px rgb(2, 7, 39);
-}
-
-.three-images-AI {
-  top: 40%;
-  float: right;
-  width: 200px;
-  height: 200px;
-  padding-top: 120px;
-  position: relative;
-}
-
-.three-images-AI img {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
-
-.two-images-BW-Services img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
-
-.rotating-string {
-  width: 130px;
-  height: 130px;
-  animation: rotateAntiClockwise 0.7s linear infinite;
-}
-
-.AI {
-  width: calc(130px + 3rem);
-  height: calc(130px + 3rem);
-}
-
-.bg-wheel-three-images {
-  width: calc(130px + 4rem);
-  height: calc(130px + 4rem);
-  animation: rotateClockwise 5s linear infinite;
-  border: solid;
-  box-shadow: 3px 3px 5px rgb(2, 7, 39);
-}
-
-.our-services-first-pix {
-  width: 240px;
-  height: auto;
-  max-width: 100%;
-}
-
-.bg-wheel-two-images {
-  width: calc(240px + 1rem);
-  height: calc(240px + 1rem);
-  animation: rotateClockwise 5s linear infinite;
-  max-width: 100%;
-}
-
-.wrapper6-section {
-  padding: 0.5rem;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.wrapper1-section {
-  padding: 0.5rem;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.img-info-3 {
-  width: 100%;
-}
-
-.img-info-1 {
-  width: 100%;
-  padding: 0 4px;
-  align-content: center;
-  line-height: 28px;
-  align-items: center;
-}
-
-.ML {
-  position: absolute;
-  animation: bounce 5s infinite;
-  width: 150px;
-  max-width: 100%;
-  height: auto;
-  border: solid;
-  border-radius: 50%;
-  left: 47%;
-  box-shadow: 3px 3px 5px rgb(2, 7, 39);
-}
-
-.deepLearning {
-  position: absolute;
-  animation: slideInleftDL 5s ease-in-out 0.5s infinite;
-  width: 100px;
-  top: 35%;
-  border: solid 1.5px;
-  border-radius: 50%;
-  max-width: 100%;
-  box-shadow: 3px 3px 5px rgb(2, 7, 39);
-}
-
-@keyframes slideInleftDL {
-  from {
-    transform: translateX(-1800%);
-  }
-
-  to {
-    transform: translateX(-145%);
-  }
-}
-
-@keyframes bounce {
-
-  0%,
-  100%,
-  30% {
-    transform: translateX(-10%);
-  }
-
-  30% {
-    transform: translateX(-70%);
-  }
-
-  70% {
-    transform: translateY(-20%);
-  }
-}
-
-@keyframes rotateAntiClockwise {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
-}
-
-@keyframes rotateClockwise {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-.psachSearch {
-  background-color: var(--primaryColor);
-  width: 100%;
-  height: auto;
-  color: var(--tetiary2Color);
-  justify-content: center;
-  padding: 24px;
-}
-
-.psachBody {
-  background-color: var(--primaryColor);
-  width: 100%;
-  min-height: 100vh;
-  color: var(--tetiary2Color);
-  justify-content: center;
-  display: flex;
-
-}
-
-.navpsach {
-  background-image: linear-gradient(90deg,
-      rgba(83, 96, 122, 0.846) 15%,
-      #ecab5cff);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  box-shadow: rgba(228, 201, 68, 0.4);
-}
-
-.formContainer {
-  padding: 3% 3%;
-  text-align: center;
-  width: 100%;
-  border-radius: 12px;
-  justify-items: center;
-  align-items: center;
-}
-
-.subPage {
-  font-weight: bolder;
-  backdrop-filter: blur(50px);
-  color: var(--textColor);
-  margin-bottom: 12px;
-}
-
-.whatWeDo {
-  width: 100%;
-  height: auto;
-  padding: 8px;
-  background-color: var(--primaryColor);
-  text-align: left;
-  color: var(--textColor);
-  line-height: 24px;
-  letter-spacing: 1px;
-  backdrop-filter: blur(50px);
-  border-radius: 8px;
-}
-
-.serviceFooter {
-  text-align: center;
-}
-
-.companyInfo {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-.companyContact {
-  margin-top: 35px;
-  margin-bottom: 24px;
-  width: 100%;
-  text-align: center;
-}
-
-.companySummary {
-  text-align: center;
-}
-
-.moreDesign {
-  margin-top: 40px;
-  margin-bottom: 24px;
-}
-
-h5 {
-  font-size: 4cqmax;
-  font-weight: 200;
-  color: var(--secondaryColor);
-  padding-top: 1%;
-  line-height: 90%;
-  text-align: center;
-  text-shadow: 0 2px 3px rgb(2, 7, 39);
-  font-size: 28px;
-}
-
-h1 {
-  line-height: 36px;
-  font-family: roboto, sans-serif;
-  font-weight: 200;
-  text-align: center;
-  font-size: 2rem;
-  text-shadow: 0 2px 3px rgb(2, 7, 39);
-}
-
-.searchBar {
-  width: 100%;
-  height: auto;
-}
-
-.searchBtn {
-  display: inline-block;
-
-}
-
-.searchArea {
-  width: 40px;
-  display: inline-block;
-}
-
-/*
----------------------------
-<div class="contactInfo">
-              <h4>CONTACT</h4>
-              <p class=""><span class="email">Email:</span> info@fybacast.com.ng</p>
-              <p class=""><span class="address">Address:</span> Plot 673, Bazango Layout, Phase 4, Kubwa, Abuja, Nigeria</p>
-              <p class=""><span class="phone">Phone:</span>+2347025890125</p><p class=""><span class="whatsapp">WhatsApp:</span>+2347044419009</p>
-              <br>
-              <br>
-              <br>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Artificial Intelligence, AI, Machine Learning, ML, Graphics Design">
+  <meta name="description" content="Fybacast is an innovative provider of information technology solutions
+    for businesses of all sizes" />
+  <title>Fybacast</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navpsach">
+    <a href="#">
+      <img class="logo" src="images/logo.png" alt="Fybacast Logo" />
+    </a>
+    <ul class="sidebar">
+      <li class="closeicon" onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a>
+      </li>
+      <li class="home"><a href="index.html">Home</a></li>
+      <li class="product"><a href="Products.html">Products</a></li>
+      <li class="service"><a href="Services.html">Services</a></li>
+      <li class="about"><a href="About.html">About</a></li>
+      <li class="contact"><a href="Contact.html">Contact</a></li>
+      <li class="help"><a href="Help.html">Help</a></li>
+    </ul>
+    <ul class="top-bar">
+      <li class="home"><a href="index.html">Home</a></li>
+      <li class="product"><a href="Products.html">Products</a></li>
+      <li class="service"><a href="Services.html">Services</a></li>
+      <li class="about"><a href="About.html">About</a></li>
+      <li class="contact"><a href="Contact.html">Contact</a></li>
+      <li class="help"><a href="Help.html">Help</a></li>
+      <li class="menuicon" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="psachBody">
+    <div class="formContainer">
+      <div class="whatWeDo">
+        <h4>WHAT WE DO</h4>
+        <p class="companySummary">Comprehensive IT & Digital Solutions for Your Business!
+          At Fybacast, we provide cutting-edge technology solutions designed to enhance business operations, improve
+          security and drive digital transformation. Whether you're a startup, an enterprise or an individual seeking
+          innovative IT solutions, we offer a one-stop service for all your technology needs.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>🎨GRAPHIC DESIGN</h1>
+        <h5>
+          Bring Your Vision to Life with Stunning Graphic Design!
+        </h5>
+        <p class="companySummary">
+          We make creative, impactful, eye-catching and professional design services that enhance your brand identity &
+          visual communication – this is what we do best! Whether you're a startup, an established business or an
+          individual looking to make a lasting impression, our expert graphic design solutions will set you apart from
+          the competition.</p>
+
+        <h5>Why Choose Our Graphic Design Services?</h5>
+
+        <p>✔ Brand Identity & Logo Design – Make a powerful first impression with a unique, memorable logo that
+          represents your brand’s essence and values.</p>
+
+        ✔ Marketing & Advertising Materials – From business cards and brochures to banners and billboards, we create
+        visually striking materials that capture attention and drive engagement.</p>
+
+        ✔ Social Media Graphics – Elevate your online presence with custom-designed social media posts, covers and ads
+        that
+        align with your brand’s voice and aesthetics.</p>
+
+        ✔ Website & UI/UX Design – A well-designed website is crucial for business success. Our sleek, user-friendly
+        and visually appealing designs enhance user experience and brand credibility.</p>
+
+        ✔ Product Packaging & Labels – Stand out on the shelves with professionally designed packaging that speaks to
+        your target audience and enhances product appeal.</p>
+
+        ✔ Custom Illustrations & Infographics – Transform complex information into visually engaging graphics that are
+        easy to understand and share.</p>
+
+        ✔ Event & Print Designs – Need eye-catching posters, flyers or invitations? We create designs that leave a
+        lasting impact.</p>
+
+        <h5>💡Why Settle for Ordinary When You Can Have Extraordinary?</h5>
+
+        <p class="companySummary">Our team of creative professionals understands the power of visual storytelling. We
+          blend artistry with strategy to create designs that don’t just look great, but also convert, communicate and
+          captivate.</p>
+        <p class="companySummary">📞 Let's Create Something Amazing Together!</p>
+
+        <h5>Ready to elevate your brand with stunning designs?</h5>
+        <div class="companyContact"><a href="Contact.html" id="linkBtn"><span>Let's Talk</span><i></i></a></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>☁ SERVER & CLOUD-BASED SERVICES</h1>
+        <h5>We provide seamless cloud integration and excellent server management to enhance business productivity such
+          as:</h5>
+        <p>✔ Cloud Hosting & Storage Solutions</p>
+        <p>✔ Virtual Private Servers (VPS) & Dedicated Server Setup</p>
+        <p>✔ Data Backup & Disaster Recovery</p>
+        <p>✔ Cloud-Based Collaboration & Communication Tools.</p>
+        <p class="companySummary">Provision of computing service that provides remote access to shared computer
+          resources such as applications,data storage and networking over the internet – this is the power of cloud
+          computing. Say goodbye to expensive hardware, limited storage and security concerns. The cloud is your gateway
+          to efficiency, scalability and innovation!</p>
+
+        <h5>💡 Why Choose Our Cloud Computing Service?</h5>
+
+        <p>✔ Cost Efficiency – Reduce IT infrastructure costs by eliminating the need for expensive on-site servers and
+          maintenance. Pay only for what you use!</p>
+
+        <p>✔ Scalability & Flexibility – Need more storage or processing power? Instantly scale up or down to meet your
+          business demands without disruption.</p>
+
+        <p>✔ Accessibility Anywhere, Anytime – Work seamlessly from any location with internet access. Keep your
+          data,applications and collaboration tools at your fingertips!</p>
+
+        <p>✔ Enhanced Security – With built-in encryption, regular backups and multi-layered security protocols, your
+          data is safer in the cloud than on traditional systems.</p>
+
+        <p>✔ Seamless Collaboration – Empower your team with real-time collaboration on documents, projects and
+          applications, no matter where they are.</p>
+
+        <p>✔ Disaster Recovery & Backup – Never lose critical data again! Automatic backups ensure business continuity
+          in the event of a system failure.</p>
+        <p class="companySummary">Join thousands of businesses that have already embraced the cloud to enhance
+          productivity, reduce costs and stay ahead of the competition.</p>
+
+        <p class="companySummary">📞 Contact Us Today! Let’s discuss how cloud computing can revolutionize your
+          operations.</p>
+
+        <h5>Cloud Computing is the Future, Are You Ready to Transform Your Business?</h5>
+        <div class="companyContact"><a href="Contact.html" id="linkBtn"><span>Let's Talk</span><i></i></a></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>🔒 DIGITAL SECURITY</h1>
+        <h5>
+          Stay Secure, Stay Ahead – Advanced Cybersecurity Solutions!
+        </h5>
+        <p class="companySummary">
+          A set of technologies that process and protect networks, computer systems, programs and data from attack,
+          damage, or unauthorized access. In today’s digital world, cyber threats are evolving faster than ever – are
+          you prepared? A single security breach can compromise sensitive information, disrupt operations and damage
+          your reputation.
+          Don't wait for an attack – stay ahead with robust cybersecurity solutions!
+        </p>
+
+        <h5>Why Cybersecurity is Essential for You</h5>
+
+        <p>✔ Data Protection – Prevent data breaches, leaks and unauthorized access to sensitive business and customer
+          information.</p>
+
+        <p>✔ Network Security – Safeguard your internal and external networks from malware, ransomware, phishing attacks
+          and other cyber threats.</p>
+
+        <p>✔ Endpoint Security – Protect all connected devices, including laptops, desktops, mobile phones and IoT
+          devices, ensuring total system security.</p>
+
+        <p>✔ Cloud Security – Secure your cloud-based applications and storage solutions with advanced encryption and
+          multi-layered protection.</p>
+
+        <p>✔ Threat Detection & Response – Identify potential risks in real time and neutralize threats before they
+          cause harm.</p>
+
+        <p>✔ Compliance & Regulatory Security – Ensure your business meets cybersecurity standards such as GDPR,
+          HIPAA,PCI-DSS and more.</p>
+
+        <p>✔ Cyber Awareness Training – Educate employees on best security practices to minimize human errors that lead
+          to cyber attacks.</p>
+
+        <h5>💡 Don’t Wait Until It’s Too Late – Secure Your Business Today!</h5>
+
+        <p class="companySummary">Cybercriminals don’t rest, and neither should your security strategy. Whether you’re a
+          small business, a growing enterprise or an individual in need of protection, our cutting-edge cybersecurity
+          solutions provide unmatched safety, reliability and peace of mind.</p>
+        <h5>Are You Ready To Stay Protected & Stay Resilient? – Invest in Cybersecurity Now!</h5>
+        <div class="companyContact"><a href="Contact.html" id="linkBtn"><span>Let's Talk</span><i></i></a></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>🔌💻INFRASTRUCTURAL
+          SALES & SUPPLY OF TELECOM
+          EQUIPMENT</h1>
+        <h5>Providing High-quality Networking and Telecommunication Solutions:</h5>
+        <p class="companySummary">We sell reliable IT and Telecommunication Infrastructure to deploy, optimize and
+          commission your business operations and connectivity. In today’s fast-paced digital world, having the right
+          networking equipment is essential for smooth operations, high-speed connectivity and secure data transmission.
+          Whether you are setting up a new office, upgrading your existing network, deploying a new project or expanding
+          your operations, we have the perfect networking solutions tailored to your needs.
+
+        <h5>Our Range of Network & IT Infrastructure Products Include:</h5>
+
+        <p>✔ Routers & Modems – Ensure high-speed and secure internet connectivity for businesses of all sizes.</p>
+
+        <p>✔ Network Switches – From unmanaged to fully managed switches, we provide solutions for seamless data
+          transmission and efficient network performance.</p>
+
+        <p>✔ Access Points & Wi-Fi Solutions – Expand your wireless coverage with enterprise-grade Wi-Fi solutions that
+          offer fast,stable and secure connections.</p>
+
+        <p>✔ Firewalls & Security Appliances – Protect your network from cyber threats with advanced security solutions,
+          including intrusion prevention, malware protection and encrypted VPNs.</p>
+
+        <p>✔ VoIP & Telecommunication Systems – Upgrade your communication with high-quality VoIP phones, PBX systems
+          and cloud-based telephony solutions.</p>
+
+        <p>✔ Structured Cabling & Fiber Optic Solutions – Improve network efficiency with top-quality cables, patch
+          panels and fiber optic infrastructure for high-speed data transmission.</p>
+
+        <p>✔ Network Storage & Backup Solutions – Protect your critical business data with NAS, cloud storage and backup
+          systems designed for reliability and security.</p>
+
+        <p>✔ Data Center & Server Racks – Organize and optimize your IT infrastructure with server cabinets, cooling
+          systems and power management solutions.</p>
+
+        <h5>💡 Why Choose Us?</h5>
+
+        <p>✅ High-Quality & Certified Products – We supply industry-leading networking equipment from top manufacturers.
+        </p>
+        <p>✅ Expert Guidance & Consultation – Our IT specialists help you choose the best network solutions for your
+          business.</p>
+        <p>✅ Scalable & Future-Proof Solutions – Our products grow with your business, ensuring long-term efficiency and
+          performance.</p>
+        <p>✅ Competitive Pricing & Fast Delivery – Get the best prices on premium networking products with quick
+          nationwide delivery.</p>
+        <p>✅ Reliable After-Sales Support – Our team is available 24/7 to assist with setup, troubleshooting and network
+          optimization.</p>
+
+        <h5>Are You Ready To Get The Best Networking Solutions For Your Business Today?</h5>
+        <div class="companyContact"><a href="Contact.html" id="linkBtn"><span>Let's Talk</span><i></i></a></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>🤖 MACHINE LEARNING & AI</h1>
+        <h5>
+          Unlock the Future with Machine Learning & AI!
+        </h5>
+        <p class="companySummary">
+          The simulation of human intelligence processed by machines, especially computer systems, is revolutionizing
+          industries, enhancing efficiency and transforming how businesses operate. Machine Learning (ML) and Artificial
+          Intelligence (AI)
+          are no longer futuristic concepts – they are the driving forces behind automation, smart decision-making and
+          business
+          growth. Are you ready to harness the power of AI?
+        </p>
+        <h5>Why Invest in Machine Learning & AI?</h5>
+
+        <p>✔ Data-Driven Decision Making – AI analyzes vast amounts of data to uncover patterns, predict trends and
+          provide actionable insights that drive smarter business strategies.</p>
+
+        <p>✔ Process Automation – Reduce manual workloads and increase efficiency by automating repetitive tasks with
+          intelligent AI-driven solutions.</p>
+
+        <p>✔ Enhanced Customer Experience – Deliver personalized recommendations, chatbots and AI-powered support to
+          improve customer engagement and satisfaction.</p>
+
+        <p>✔ Fraud Detection & Cybersecurity – Detect anomalies in real-time, protect sensitive information and prevent
+          security breaches with AI-driven threat analysis.</p>
+
+        <p>✔ Predictive Analytics – Forecast market trends, customer behavior and business outcomes with advanced
+          machine learning models.</p>
+
+        <p>✔ AI-Powered Marketing & Sales – Optimize marketing campaigns, target the right audience and maximize
+          conversions with AI-driven insights.</p>
+
+        <p>✔ Smart Healthcare Solutions – Improve diagnostics, patient monitoring and drug discovery with AI-powered
+          healthcare innovations.</p>
+
+        <h5>💡 The Future is AI – Are You Ready to Lead?</h5>
+
+        <p class="companySummary">Machine Learning and AI are shaping the next wave of digital transformation. Whether
+          you’re a startup, an enterprise or an individual looking to integrate AI into your projects, we provide custom
+          AI solutions that drive innovation, efficiency and profitability.</p>
+
+        <p class="companySummary">Transform Your Business with AI – Stay Ahead of the Competition!</p>
+
+        <h5>Would you want us to build the future together?</h5>
+        <div class="companyContact"><a href="Contact.html" id="linkBtn"><span>Let's Talk</span><i></i></a></div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class="serviceSideBar">
+        <div class="whyChooseUs2">
+          <h5>💡 Why Choose Us?</h5>
+          <br>
+          <p>✅ Industry-Leading Expertise – We provide innovative solutions tailored to your business needs.</p>
+          <p>✅ Scalable & Cost-Effective – Our services are designed to grow with your business.</p>
+          <p>✅ Security & Reliability – We prioritize data protection and secure IT infrastructure.</p>
+          <p>✅ 24/7 Support & Maintenance – We’re here whenever you need us.</p>
+          <br>
+          <br>
+          <div class="serviceFooter">
+            <p>Let’s Power Your Business with Technology!</p>
+            <br>
+            <div class="companyInfo"><a href="Contact.html" id="linkBtn"><span>Reach Us</span><i></i></a></div>
+            <br>
+            <p>🚀 Innovate. Secure. Grow.</p>
+            <p> Digital Transformation Starts Here! 🚀
+            </p>
           </div>
-----------------------------     
-*/
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
