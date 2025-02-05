@@ -7,7 +7,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: var(--textColor);
-  background-color: #000000;
   overflow-x: hidden;
   contain: layout;
   justify-items: center;
@@ -137,6 +136,10 @@ navpsach.help:hover {
   border-radius: 0.5rem;
 }
 
+.blinkBlackBackgroung {
+  background: #000000;
+}
+
 @media (max-width: 330px) {
   nav .top-bar {
     display: none;
@@ -258,6 +261,7 @@ navpsach.help:hover {
   align-items: center;
   text-align: center;
   padding: 6%;
+  margin-top: -24px;
 }
 
 .world-image .column-dots {
@@ -402,8 +406,8 @@ navpsach.help:hover {
   justify-items: center;
   text-align: center;
   width: 100%;
-  padding: 1%;
   display: block;
+  
 }
 
 .wrapper3 {
@@ -639,7 +643,7 @@ h4 {
 }
 
 .radioPaymentMethod {
-  width: calc(100% - 24px);
+  width: 100%;
   height: auto;
   background: rgba(83, 96, 122, 0.512);
   text-align: left;
@@ -649,14 +653,6 @@ h4 {
   padding: 12px 24px;
 }
 
-#contactForm a {
-  width: 12rem;
-  padding: 1rem .1rem;
-  font-family: roboto, sans-serif;
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-}
 
 #contactForm a:hover {
   transform: translateY(-10px);
@@ -1003,7 +999,20 @@ textarea {
   justify-items: center;
   width: 100%;
   max-width: 500px;
-  padding: 12px;
+  padding: 32px;
+  background-color: var(--tetiaryColor);
+  border-radius: 12px;
+}
+
+.contact-formPayment {
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
   background-color: var(--tetiaryColor);
   border-radius: 12px;
 }
