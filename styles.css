@@ -1295,7 +1295,7 @@ textarea {
   color: var(--tetiary2Color);
   justify-content: center;
   display: flex;
-  padding: 24px;
+
 }
 
 .navpsach {
@@ -1310,8 +1310,7 @@ textarea {
 }
 
 .formContainer {
-  background-color: rgb(94, 108, 136);
-  padding: 5% 10%;
+  padding: 3% 3%;
   text-align: center;
   width: 100%;
   max-width: 95%;
@@ -1381,7 +1380,7 @@ h5 {
 }
 
 h1 {
-  line-height: 32px;
+  line-height: 36px;
   font-family: roboto, sans-serif;
   font-weight: 200;
   text-align: center;
