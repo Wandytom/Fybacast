@@ -373,16 +373,37 @@ navpsach.help:hover {
   }
 
   .galleryA {
-    animation: slideInRightGalleryImages 15s linear infinite;
+    animation: slideInLeftGalleryImages 15s linear infinite;
   }
 
   .whatWeDo {
-    max-width: 1000px;
+    max-width: 768px;
+    margin-right: 32px;
+  }
+
+  .serviceSideBar {
+    width: calc(100% - 768px);
+    height: 100%;
+    background: var(--tetiaryColor);
+    border-radius: 12px;
+    padding: 12px;
+    
   }
 
   .moreDesign {
     width: 100%;
   }
+
+  .formContainer {
+    display: flex;
+  }
+}
+
+.serviceSideBar {
+  text-align: left;
+  color: var(--textColor);
+  line-height: 28px;
+  letter-spacing: 1px;
 }
 
 .GraphicDesignThirdPix,
@@ -408,7 +429,6 @@ navpsach.help:hover {
   text-align: center;
   width: 100%;
   display: block;
-  
 }
 
 .wrapper3 {
@@ -723,36 +743,21 @@ h2 {
 
 /*Gallery*/
 
-@keyframes slideInLeftGalleryImages {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(25%);
-  }
-
-  5% {
-    transform: translate(5%);
-  }
-}
-
-.gallery {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  width: max-content;
-  animation: slideInRightGalleryImages 30s linear infinite;
-  position: relative;
-}
-
+.gallery,
 .galleryA {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1rem;
   width: max-content;
-  animation: slideInLeftGalleryImages 30s linear infinite;
   position: relative;
+}
+
+.gallery {
+  animation: slideInRightGalleryImages 30s linear infinite;
+}
+
+.galleryA {
+  animation: slideInLeftGalleryImages 30s linear infinite;
 }
 
 @keyframes slideInRightGalleryImages {
@@ -766,6 +771,20 @@ h2 {
 
   5% {
     transform: translate(-5%);
+  }
+}
+
+@keyframes slideInLeftGalleryImages {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+
+  5% {
+    transform: translate(5%);
   }
 }
 
@@ -786,6 +805,7 @@ h2 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
 }
 
 .product-container,
@@ -1323,14 +1343,9 @@ textarea {
   padding: 3% 3%;
   text-align: center;
   width: 100%;
-  max-width: 95%;
   border-radius: 12px;
   justify-items: center;
-  justify-content: center;
-  justify-self: center;
   align-items: center;
-  align-self: center;
-  align-content: center;
 }
 
 .subPage {
@@ -1401,29 +1416,20 @@ h1 {
 .searchBar {
   width: 100%;
   height: auto;
+  display: flex;
+  align-items: center;
 }
 
-.searchBtn {
-  display: inline-block;
-  
+.searchIcon {
+  width: 48px;
+  height: 100%;
 }
 
 .searchArea {
-  width: 40px;
-  display: inline-block;
+  flex: 1;
+  max-width: 300px;
 }
 
-/*
----------------------------
-<div class="contactInfo">
-              <h4>CONTACT</h4>
-              <p class=""><span class="email">Email:</span> info@fybacast.com.ng</p>
-              <p class=""><span class="address">Address:</span> Plot 673, Bazango Layout, Phase 4, Kubwa, Abuja, Nigeria</p>
-              <p class=""><span class="phone">Phone:</span>+2347025890125</p><p class=""><span class="whatsapp">WhatsApp:</span>+2347044419009</p>
-              <br>
-              <br>
-              <br>
-            </div>
-          </div>
-----------------------------     
-*/
+.seeProductsBtn {
+  text-align: center;
+}
