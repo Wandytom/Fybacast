@@ -270,6 +270,7 @@ navpsach.help:hover {
   width: 59px;
   height: 55px;
   margin-left: auto;
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -526,13 +527,17 @@ navpsach.help:hover {
 }
 
 h4 {
-  font-size: 7vw;
+  font-size: 6.5vw;
   color: var(--secondaryColor);
-  padding-top: 1%;
+  /* padding: 3% 0.1%; */
   line-height: 90%;
-  font-weight: 200;
   text-align: center;
-  text-shadow: 0 2px 3px rgb(2, 7, 39);
+  background-color: #020727;
+  border-radius: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* .btn {
@@ -564,22 +569,6 @@ h4 {
   margin-top: 30px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
-
-/* .btn:hover {
-  transform: translateY(-10px);
-  background-color: var(--tetiary2Color);
-  color: var(--buttonColor);
-} */
-
-/* .btn:active,
-.laptop a:active {
-  opacity: 0.5;
-  color: var(--textColor);
-  background-color: var(--buttonColor);
-  transition-duration: 0.1ms;
-  box-shadow: none;
-  letter-spacing: 0.1rem;
-} */
 
 #linkBtn:before {
   content: '';
@@ -934,6 +923,7 @@ h2 {
   color: var(--textColor);
   padding: 0.4rem 0;
   margin-bottom: 1rem;
+  max-width: fit-content;
 }
 
 .contact-info {
@@ -1377,6 +1367,18 @@ textarea {
   margin-bottom: 24px;
 }
 
+#godwinLPBtn {
+  position: relative;
+  text-decoration: none;
+  color: var(--textColor);
+  font-size: 1rem;
+  padding: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  background-color: #020727;
+  border: 3px solid;
+}
+
 .companyContact {
   margin-top: 35px;
   margin-bottom: 24px;
@@ -1432,4 +1434,57 @@ h1 {
 
 .seeProductsBtn {
   text-align: center;
+}
+
+/* -------------- */
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.fullscreen.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  animation: zoomIn 0.4s ease forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
 }
