@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Godwin Luxurious Properties</title>
+</head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<body>
+
+  <nav>
+    <img src="media/GlpLogo.png" alt="Godwin Luxurious Properties Logo">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <h5>Welcome To</h5>
+
+  <div class="handGodwin">
+  <div><h3><img src="media/glpHand.png" alt="hand in gloves" class="hand">GODWIN LUXURIOUS<img src="media/glpHand2.png" alt="hand in gloves" class="hand"></h3></div>
+  </div>
+  <h4>PROPERTIES</h4>
+  <div class="bgContainer">
+    <img src="media/ModernApartment.png" alt="Modern Apartment" class="bgImg">
+    <div class="opulencetxt">Opulence</div>
+  </div>
+  
+  <header>
+    <h1>Exceptional Properties, Exclusive Opportunities.</h1>
+    <p>Explore a handpicked portfolio of luxury homes, land investments, elite rentals and leasing solutions—designed
+      for discerning buyers and investors.</p>
+    <button onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });">View Listings</button>
+  </header>
+
+  <section id="about">
+    <h2>Godwin Luxurious Properties, Redefining Real Estate</h2>
+    <p>We specialize in the sale and lease of luxury homes, land banking and exclusive property investments. Whether
+      you're seeking a refined residence or a strategic asset, our approach ensures privacy, profitability and prestige.
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <img src="media/modernHouse.png" alt="Modern Apartment" class="galleryShowcaseImg">
+      <img src="media/luxuryHome.png" alt="Luxury Apartment" class="galleryShowcaseImg">
+      <img src="media/LandBanking.png" alt="Land Banking" class="galleryShowcaseImg">
+      <img src="media/BeachfrontEstate.png" alt="Beachfront Estate" class="galleryShowcaseImg">
+      <img src="media/LuxuryHouse.png" alt="Luxury House" class="galleryShowcaseImg">
+      <img src="media/modernBedroom.png" alt="Modern Bedroom" class="galleryShowcaseImg">
+    </div>
+    <div class="fullscreen" id="fullscreen">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <img src="" alt="Full Image" id="fullscreenImg">
+    </div>
+  </section>
+
+  <section id="showcase">
+    <h2>Property Showcase</h2>
+    <div class="showcase">
+      <div class="videoPart">
+        <p>Watch this video to see the layout of our Karshi, Abuja Suncity Estate:</p>
+        <video controls="controls" width="300" height="240" loop autoplay muted poster="thumbnailPix.png">
+          <source src="propertyTour.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <img src="media/GLPPrices.jpg" alt="Godwin Luxurious Properties Direction" class="galleryShowcaseImg">
+      <img src="media/GLPDirection.jpg" alt="Godwin Luxurious Properties Prices" class="galleryShowcaseImg">
+      <a href="https://wa.me/message/2V4QYOCPEYNQD1" class="btn" target="_blank"><span>Speak to a Consultant</span></a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <div class="error" id="errorMsg"></div>
+        <div class="contactBtn"><button type="submit">Send</button></div>
+      </form>
+    </div>
+  </section>
+
+  <a href="https://wa.me/message/2V4QYOCPEYNQD1" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+  </a>
+  <footer>&copy Copyright Godwin Luxurious Properties 2025. All rights reserved. Designed and Developed by
+    TPhicx(+2347068484947)</footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
