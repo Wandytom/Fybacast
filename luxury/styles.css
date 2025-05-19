@@ -130,7 +130,7 @@ nav img {
   filter: blur(15px) backdrop-filter;
   opacity: 0.7;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  align-text: left; 
+  text-align: left; 
 }
 
 @media (min-width: 768px) {
