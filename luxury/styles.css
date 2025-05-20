@@ -214,7 +214,7 @@ nav img {
   position: relative;
   width: 100%;
   display: block;
-  height: auto;
+  height: 100vh;
   text-align: center;
 }
 
