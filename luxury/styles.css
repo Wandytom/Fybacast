@@ -212,7 +212,7 @@ nav img {
 
 .bgImg {
   position: relative;
-  width: 100%;
+  width: 100vw;
   display: block;
   height: 100vh;
   text-align: center;
