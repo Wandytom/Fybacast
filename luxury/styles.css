@@ -67,12 +67,6 @@ p {
   opacity: 0;
 }
 
-.handGodwin {
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
-
-}
 
 button {
   background-color: var(--green);
@@ -212,9 +206,9 @@ nav img {
 
 .bgImg {
   position: relative;
-  width: 100vw;
+  width: 100%;
   display: block;
-  height: 100vh;
+  height: auto;
   text-align: center;
 }
 
@@ -440,3 +434,19 @@ p.visible {
 }
 
 /* This class will be added via JS after 0.5s */
+
+
+.lastbtn {
+  background-color: var(--green);
+  width: calc(100% - 30px);
+  max-width: 600px;
+  border: none;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 5px;
+  padding: 6px 60px;
+}
+
+.lastbtn:hover {
+  background-color: var(--orange);
+}
